@@ -1,0 +1,35 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project:	Roadster
+Version:	1.0
+Assigned to:	WebNik
+Primary use:	Roadster
+-------------------------------------------------------------------*/
+
+/* FONTS*/
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i');
+@import url('../fonts/font-awesome/css/font-awesome.min.css');
+@import url('../fonts/flaticon/font/flaticon.css');
+@import url('../fonts/simple/simple.css');
+
+/* PLUGIN CSS */
+@import url('../libs/bootstrap/css/bootstrap.css');
+@import url('../plugins/isotope/isotope.css');
+@import url('../plugins/owl-carousel/owl.carousel.css');
+@import url('../plugins/owl-carousel/owl.transitions.css');
+@import url('../plugins/owl-carousel/owl.theme.css');
+@import url('../plugins/prettyphoto/css/prettyPhoto.css');
+@import url('../plugins/noUiSlider/nouislider.min.css');
+@import url('../plugins/headers/header.css');
+@import url('../plugins/headers/yamm.css');
+@import url('../plugins/bootstrap-select/css/bootstrap-select.css');
+@import url('../plugins/flexslider/flexslider.css');
+@import url('../plugins/slider-pro/slider-pro.css');
+@import url('../plugins/animate/animate.css');
+
+
+/* MAIN CSS */
+@import 'theme.css';
+@import 'color.css';
+@import 'responsive.css';
