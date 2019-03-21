@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="zxx">
   <head>
@@ -8,26 +9,61 @@
      <link rel="icon" href="favicon.ico" type="image/x-icon"/>
      <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
       
-    <link href="assets/css/master.css" rel="stylesheet">
+   <link href="assets/css/master.css" rel="stylesheet">
+   <style>
+    h1{
+      color:black;
+      text-align: center;
+      font-weight: bold
+    }
   
+    FORM{
+      text-align: center
+    }
+  
+    input{
+      width: 200px;
+      color: black;
+      margin:10px  
+    }
+  
+    #addbox{
+      border: 2px solid black
+    }
+  
+    #p1{
+      text-align: center;
+    }
+  
+    #p2{
+      padding-left: 348px
+    }
+  
+    </style>
   </head>
 
   <body>
-        <div>
-            <h1 style="color:black;text-align: center"><b>Administrator</b></h1>
-            <FORM style="text-align: center">
-                <INPUT type="button" value="Add" onclick="window.location.href='add.html'">
-                <input type="button" value="Delete" onclick="window.location.href='delete.html'">
-                <input type="button" value="Update" onclick="window.location.href='update.html'"><br />
-                <input type="button" value="Inventory Report" onclick="window.location.href='inventory-report.html'">
-                <input type="button" value="Quarterly Report" onclick="window.location.href='quarterly-report.html'">
-                <input type="button" value="Annual Report" onclick="window.location.href='annual-report.html'"><br />
-            </FORM>
-        </div>
+    <div>
+    <h1>Administrator</h1>
+    <FORM>
+      <INPUT type="button" value="Add" onclick="window.location.href='add.html'">
+        <INPUT type="button" value="Delete" onclick="window.location.href='delete.html'">
+          <INPUT type="button" value="Update" onclick="window.location.href='update.html'"><br />
+            <INPUT type="button" value="Inventory Report" onclick="window.location.href='inventory-report.html'">
+              <INPUT type="button" value="Quarterly Report" onclick="window.location.href='quarterly-report.html'">
+                <INPUT type="button" value="Annual Report" onclick="window.location.href='annual-report.html'"><br />
+    </FORM>
+   </div>
+   <br /><br />
+   <div id="addbox">
+        <h1>Update a vehicle</h1>
+        <p id="p1">
+            <input type="text" id=VIN value="VIN #" />
+            <input type="button" id=Search value="Search" />
+          </p>
+       </div>
   
-        <div>
-            <h1 style="color:black;text-align: center"> <b>Update a vehicle.</b></h1>
-        </div>
+<br /><br /> <br />
 
   <footer class="footer">
     <div class="section-bg section-bg_dark section-bg-05" >
@@ -51,7 +87,7 @@
                 </div>
                 <div class="footer-contacts">
                   <span class="footer-contacts__title">email:</span>
-                  <a href="mailto:info@redlineauto.us" class="footer-contacts__info">info@redlineauto.us</a>
+                  <a href="mailto:redlineautoomaha@gmail.com" class="footer-contacts__info">redlineautoomaha@gmail.com</a>
                 </div>
               </div>
             </div>
@@ -116,125 +152,6 @@
       </div>
     </div>
   </footer>
-</body>
-=======
-<!DOCTYPE html>
-<html lang="zxx">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
-    <title>RED LINE AUTO LLC</title>
-      
-     <link rel="icon" href="favicon.ico" type="image/x-icon"/>
-     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
-      
-    <link href="assets/css/master.css" rel="stylesheet">
-  
-  </head>
 
-  <body>
-        <div>
-            <h1 style="color:black;text-align: center"><b>Administrator</b></h1>
-            <FORM style="text-align: center">
-                <INPUT type="button" value="Add" onclick="window.location.href='add.html'">
-                <input type="button" value="Delete" onclick="window.location.href='delete.html'">
-                <input type="button" value="Update" onclick="window.location.href='update.html'"><br />
-                <input type="button" value="Inventory Report" onclick="window.location.href='inventory-report.html'">
-                <input type="button" value="Quarterly Report" onclick="window.location.href='quarterly-report.html'">
-                <input type="button" value="Annual Report" onclick="window.location.href='annual-report.html'"><br />
-            </FORM>
-        </div>
-  
-        <div>
-            <h1 style="color:black;text-align: center"> <b>Update a vehicle.</b></h1>
-        </div>
-
-  <footer class="footer">
-    <div class="section-bg section-bg_dark section-bg-05" >
-      <div class="ui-decor-corners"><span class="ui-decor-corners__left"></span><span class="ui-decor-corners__right"></span></div>
-      <div class="footer__top bg-inner">
-        <div class="container">
-          <div class="row">
-            <div class="col-xs-12">
-              <img class="footer__logo center-block" src="assets/media/logo-footer.png" alt="Red Line Auto LLC ">
-              <div class="ui-decor"></div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-4">
-              <div class="footer__section">
-                <div class="footer__title">About Red Line Auto LLC </div>
-                <div class="footer__info">Red Line Auto LLC is local licensed car dealership located in the City of Omaha off of I-80 on 84th Street.</div>
-                <div class="footer-contacts">
-                  <span class="footer-contacts__title">Phone:</span>
-                  <a href="tel:+16234759820" class="footer-contacts__info footer-contacts__info_lg">+1 (531) 200-3879</a>
-                </div>
-                <div class="footer-contacts">
-                  <span class="footer-contacts__title">email:</span>
-                  <a href="mailto:info@redlineauto.us" class="footer-contacts__info">info@redlineauto.us</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-2">
-              <div class="footer__section">
-                <div class="footer__title">Useful Links</div>
-                <ul class="footer__list list-unstyled">
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="about.html">About</a></li>
-                  <li><a href="vehicle-listings.html">Inventory</a></li>
-                  <li><a href="offers.html">Services</a></li>
-                  <li class=""><a href="contact.html">Contact</a></li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="col-md-3">
-              <div class="footer__section">
-                <div class="footer__title">Working Hours</div>
-                <div class="footer-time">
-                  <span class="footer-time__name">Weekdays:</span>
-                  <span class="footer-time__info">9:00am – 6:00pm</span>
-                </div>
-                <div class="footer-time">
-                  <span class="footer-time__name">Saturday:</span>
-                  <span class="footer-time__info">10:00am – 3:00pm</span>
-                </div>
-                <div class="footer-time">
-                  <span class="footer-time__name">Sunday:</span>
-                  <span class="footer-time__info">Closed</span>
-                </div>
-                <ul class="footer-soc list-unstyled">
-                  <li class="footer-soc__item"><a class="footer-soc__link" href="#"><i class="ic fa fa-facebook"></i></a></li>
-                  <li class="footer-soc__item"><a class="footer-soc__link" href="#"><i class="ic fa fa-twitter"></i></a></li>
-                  <li class="footer-soc__item"><a class="footer-soc__link" href="#"><i class="ic fa fa-youtube-play"></i></a></li>
-                  <li class="footer-soc__item"><a class="footer-soc__link" href="#"><i class="ic fa fa-google-plus"></i></a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="footer__section">
-                <div class="footer__title">Showroom</div>
-                <div class="footer-address">
-                  <div class="footer-address__title">Red Line Auto LLC </div>
-                  <div class="footer-address__info">8520 I St<br>Omaha NE<br>68127</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <span class="ui-scroll-top js-up"></span>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12">
-          <div class="ui-wrap-figure"><span class="ui-top-figure"></span></div>
-          <div class="copyright">Copyrights 2019 <span class="copyright__brand">Red Line Auto LLC </span> : All rights reserved. <a class="copyright__link" href="#">Terms of Use</a> <a class="copyright__link" href="#">Privacy Policy</a></div>
-        </div>
-      </div>
-    </div>
-  </footer>
-</body>
-  </html>
+  </body>
+</html>
