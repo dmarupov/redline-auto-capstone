@@ -8,26 +8,61 @@
      <link rel="icon" href="favicon.ico" type="image/x-icon"/>
      <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
       
-    <link href="assets/css/master.css" rel="stylesheet">
+   <link href="assets/css/master.css" rel="stylesheet">
+   <style>
+    h1{
+      color:black;
+      text-align: center;
+      font-weight: bold
+    }
   
+    FORM{
+      text-align: center
+    }
+  
+    input{
+      width: 200px;
+      color: black;
+      margin:10px  
+    }
+  
+    #addbox{
+      border: 2px solid black
+    }
+  
+    #p1{
+      text-align: center;
+    }
+  
+    #p2{
+      padding-left: 348px
+    }
+  
+    </style>
   </head>
 
   <body>
-        <div>
-            <h1 style="color:black;text-align: center"><b>Administrator</b></h1>
-            <FORM style="text-align: center">
-                <INPUT type="button" value="Add" onclick="window.location.href='add.html'">
-                <input type="button" value="Delete" onclick="window.location.href='delete.html'">
-                <input type="button" value="Update" onclick="window.location.href='update.html'"><br />
-                <input type="button" value="Inventory Report" onclick="window.location.href='inventory-report.html'">
-                <input type="button" value="Quarterly Report" onclick="window.location.href='quarterly-report.html'">
-                <input type="button" value="Annual Report" onclick="window.location.href='annual-report.html'"><br />
-            </FORM>
-        </div>
+    <div>
+    <h1>Administrator</h1>
+    <FORM>
+      <INPUT type="button" value="Add" onclick="window.location.href='add.html'">
+        <INPUT type="button" value="Delete" onclick="window.location.href='delete.html'">
+          <INPUT type="button" value="Update" onclick="window.location.href='update.html'"><br />
+            <INPUT type="button" value="Inventory Report" onclick="window.location.href='inventory-report.html'">
+              <INPUT type="button" value="Quarterly Report" onclick="window.location.href='quarterly-report.html'">
+                <INPUT type="button" value="Annual Report" onclick="window.location.href='annual-report.html'"><br />
+    </FORM>
+   </div>
+   <br /><br />
+   <div id="addbox">
+        <h1>Quarterly Report</h1>
+        <p id="p1">
+            <input type="button" id=qrreport value="Show Quarterly Report" />
+            <input type="button" id=qrreport value="Print Quarterly Report" />
+          </p>
+       </div>
   
-        <div>
-            <h1 style="color:black;text-align: center"> <b>Quarterly Report</b></h1>
-        </div>
+       <br /><br /> <br />
 
   <footer class="footer">
     <div class="section-bg section-bg_dark section-bg-05" >
@@ -51,7 +86,7 @@
                 </div>
                 <div class="footer-contacts">
                   <span class="footer-contacts__title">email:</span>
-                  <a href="mailto:info@redlineauto.us" class="footer-contacts__info">info@redlineauto.us</a>
+                  <a href="mailto:redlineautoomaha@gmail.com" class="footer-contacts__info">redlineautoomaha@gmail.com</a>
                 </div>
               </div>
             </div>
@@ -116,5 +151,6 @@
       </div>
     </div>
   </footer>
-</body>
-  </html>
+
+  </body>
+</html>
