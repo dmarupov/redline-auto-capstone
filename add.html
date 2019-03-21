@@ -9,13 +9,42 @@
      <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
       
    <link href="assets/css/master.css" rel="stylesheet">
-  
+  <style>
+  h1{
+    color:black;
+    text-align: center;
+    font-weight: bold
+  }
+
+  FORM{
+    text-align: center
+  }
+
+  input{
+    width: 200px;
+    color: black;
+    margin:10px  
+  }
+
+  #addbox{
+    border: 2px solid black
+  }
+
+  #p1{
+    text-align: center;
+  }
+
+  #p2{
+    padding-left: 348px
+  }
+
+  </style>
   </head>
 
   <body>
     <div>
-    <h1 style="color:black;text-align: center"><b>Administrator</b></h1>
-    <FORM style="text-align: center">
+    <h1>Administrator</h1>
+    <FORM>
       <INPUT type="button" value="Add" onclick="window.location.href='add.html'">
         <INPUT type="button" value="Delete" onclick="window.location.href='delete.html'">
           <INPUT type="button" value="Update" onclick="window.location.href='update.html'"><br />
@@ -24,12 +53,30 @@
                 <INPUT type="button" value="Annual Report" onclick="window.location.href='annual-report.html'"><br />
     </FORM>
    </div>
-
-   <div>
-        <h1 style="color:black;text-align: center"><b>Add a new vehicle</b></h1>
-        
+   <br /><br />
+   <div id="addbox">
+        <h1>Add a new vehicle</h1>
+        <p id="p1">
+           <input type="text" id=Make value="Make" />
+           <input type="text" id=Model value="Model" />
+           <input type="text" id=Year value="Year" />
+           <input type="text" id=Milage value="Milage" />
+           <input type="text" id=Price value="Price" />
+           <input type="text" id=VIN value="VIN #" />
+          <textarea id=Vehicle-Detals rows="10" cols="165">Vehicle Details</textarea>
+        </p>
+        <p id="p2">
+        <input type="text" id=Drivetrain value="Drivetrain" />
+        <input type="text" id=Transmission value="Transmission" />
+        <input type="text" id=Color value="Color" />
+        <input type="text" id=Type value="Type" /><br />
+        <input type="button" id=Addimage value="Add Images" /><br />
+        <input type="button" id=Save value="Save" />
+        <input type="button" id=Reset value="Reset" />
        </div>
-  
+
+<br /><br /><br />
+
   <footer class="footer">
     <div class="section-bg section-bg_dark section-bg-05" >
       <div class="ui-decor-corners"><span class="ui-decor-corners__left"></span><span class="ui-decor-corners__right"></span></div>
