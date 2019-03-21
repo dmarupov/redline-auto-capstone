@@ -1,0 +1,116 @@
+/*//////////////////////////////////////////////////////////////////////////////////////////*/
+/* COLOR CSS 4*/
+/*//////////////////////////////////////////////////////////////////////////////////////////*/
+
+a,
+.color_primary,
+.ui-title-inner .icon:before,
+.link-img__link:hover .link-img__title,
+.main-block__title strong,
+.list-progress .icon,
+.footer-title__inner,
+.card__price-number,
+.list-categories__link:hover,
+.list-descriptions dt:before,
+.widget-post1__price,
+.social-blog__item:before,
+blockquote:before,
+.comments-list .comment-datetime,
+.b-list-progress .icon,
+.footer__list > li > a:hover,
+.b-team__soc > li > a:hover,
+.b-post .entry-title a:hover,
+.b-subscribe__submit:hover,
+.b-goods-plate__item .ic,
+.b-goods-contact .ic,
+.b-goods-det__links .btn .ic,
+.accordion .btn-collapse .ic,
+.b-post-full .entry-blockquote:after,
+.header.header-color-white .navbar .navbar-nav > li > a:hover,
+.fullscreen-center-menu li a:hover,
+[data-off-canvas] li a:hover,
+.demo_changer i,
+.text-primary {color: #ff8300;}
+
+
+.bg-color_primary,
+.main-slider__link,
+.section-bg_primary,
+.slider-grid__price,
+.list-type__link:hover,
+.list-staff__item:hover .list-staff__info,
+.progress-bar,
+.btn-effect:after,
+.yamm .navbar-toggle,
+.ui-btn_mod-a,
+.car-details__price,
+.list-tags__link:hover,
+.about-autor,
+.ui-subtitle:before,
+.ui-subtitle:after,
+.b-advantages.active .b-advantages__ic,
+.noUi-handle:before,
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span,
+.b-goods__price,
+.b-list-services__title:after,
+.b-list-services:hover,
+.b-post .entry-meta__item_primary,
+.footer__title:after,
+.b-subscribe,
+.b-gallery-filter > li.current > a,
+.b-gallery-filter > li > a:hover,
+.b-post__share:hover,
+.b-main-slider__price,
+.b-goods-det__subtitle:before,
+.b-post-full .entry-date,
+.b-post-full .entry-meta__item_primary,
+.btn-bdr-prim:hover,
+.comments-list .comment-btn:hover,
+.b-author-soc__link,
+.b-author-soc,
+#iview div.iview-directionNav a:hover,
+.b-main-slider__btn,
+.b-type-slider__name:after,
+.btn-primary {background-color: #ff8300;}
+
+.link-img__link,
+.list-type__link:hover,
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span,
+.btn-bdr-prim,
+.b-team__soc > li > a:hover,
+.b-filter-type__input:checked + .b-filter-type__label,
+.btn-primary {border-color: #ff8300;}
+
+#iview div.iview-directionNav a.iview-nextNav:hover:before,
+.list-staff__item:nth-child(even):hover .list-staff__info:after,
+.reviews:hover .reviews__title,
+.ui-decor-corners__left:after,
+.b-gallery-filter > li:hover:last-child > a:before,
+.b-gallery-filter > li.current:last-child > a:before,
+.b-author-soc:after {border-left-color: #ff8300;}
+
+#iview div.iview-directionNav a.iview-prevNav:hover:before,
+.list-staff__item:nth-child(odd):hover .list-staff__info:after,
+.ui-decor-corners__right:after,
+.b-gallery-filter > li:hover:first-child > a:before,
+.b-gallery-filter > li.current:first-child > a:before {border-right-color: #ff8300;}
+
+.header.sticky .navbar,
+.ui-scroll-top,
+.b-filter__title,
+.b-goods-calculate__title {border-bottom-color: #ff8300;}
+
+#page-preloader .spinner:after,
+.b-post-full .entry-meta__item:nth-child(even):before,
+#menu-main-menu-2.main-menu .current-menu-item > a:before,
+.current-page-parent > a:before {
+  border-top-color: #ff8300;
+}
+
+.yamm .nav > li > a:hover {box-shadow: 0 -5px 0 0 #ff8300;}
+.b-advantages.active,
+.b-type-slider__link:hover,
+.widget-title {box-shadow: inset 0 -3px 0 0 #ff8300;}
+.comments-list .comment-btn {box-shadow: -5px 0 0 0 #ff8300;}
