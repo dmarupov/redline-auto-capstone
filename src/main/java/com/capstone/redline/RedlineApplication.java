@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 import conroller.DatabaseController;
 
+//test
 @SpringBootApplication
 @ComponentScan(basePackages={"conroller", "repository" , "conroller"})
 public class RedlineApplication {
