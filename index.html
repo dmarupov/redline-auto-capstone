@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="zxx">
   <head>
@@ -198,22 +197,24 @@
               <div class="ui-wrap-figure"><span class="ui-top-figure ui-top-figure_gray"></span></div>
               <form class="b-filter-main">
                 <div class="b-filter-main__select-group">
-                  <select class="selectpicker" id="select-make" data-width="100%" title="Select Make" multiple data-max-options="1">
-                    
+                  <select class="selectpicker" onchange="getSelectedModelId(this)" id="select-make"
+                          data-width="100%" title="Select Make" multiple data-max-options="1" >
                   </select>
                   <span class="b-filter-main__label">Makers of Vehicle</span>
                 </div>
                 <div class="b-filter-main__select-group">
-                  <select class="selectpicker" id="select-model" data-width="100%" title="Select Model" multiple data-max-options="1">
-                   
+                  <select id="select-model" data-width="100%" style="width:200px; height:48px;" 
+                           data-max-options="1" title="Select Model">
                   </select>
-                  <span class="b-filter-main__label">model of the Vehicle</span>
+                  <span class="b-filter-main__label">Model of the Vehicle</span>
+                  <label id="label1"></label>
                 </div>
                 <div class="b-filter-main__select-group">
-                  <select class="selectpicker" id="select-year" data-width="100%" title="Year" multiple data-max-options="1">
-                    
+                  <select id="select-year" data-width="100%" style="width:200px; height:48px;" 
+                    data-max-options="1" title="Vehicle Year">
+
                   </select>
-                  <span class="b-filter-main__label">year of the Vehicle</span>
+                  <span class="b-filter-main__label">Year of the  Vehicle</span>
                 </div>
                 <div class="b-filter-main__slider">
                   <div class="ui-filter-slider">
@@ -346,7 +347,7 @@
           <div class="col-xs-12">
             <div class="ui-wrap-figure"><span class="ui-top-figure"></span></div>
             <section class="section-default">
-              <h2 class="ui-title-block">Weekly <span class="text-primary">Specials</span></h2>
+              <h2 class="ui-title-block">Monthly <span class="text-primary">Specials</span></h2>
               <div class="ui-subtitle">Some vehicles you would like to buy</div>
               <div class="ui-decor"></div>
               <div class="b-goods-group js-scroll-content">
@@ -827,7 +828,7 @@
                     </div>
                     <div class="footer-contacts">
                       <span class="footer-contacts__title">email:</span>
-                      <a href="mailto:redlineautoomaha@gmail.com" class="footer-contacts__info">redlineautoomaha@gmail.com</a>
+                      <a href="mailto:info@redlineauto.us" class="footer-contacts__info">info@redlineauto.us</a>
                     </div>
                   </div>
                 </div>
@@ -897,7 +898,8 @@
     <!-- ++++++++++++-->
     <!-- SCRIPTS-->
     <!-- ++++++++++++-->
-    <!-- REST API CALL-->
+
+    <!-- Rest API call -->
     <script src="assets/js/restfulapiscript.js"></script>
 
     <script src="assets/js/jquery-1.12.4.min.js"></script>
@@ -921,7 +923,9 @@
     <!-- Select customization -->
     <script src="assets/plugins/bootstrap-select/js/bootstrap-select.min.js"></script>
 
-    
+    <!-- Mail scripts-->
+    <script src="assets/plugins/jqBootstrapValidation.js"></script>
+    <script src="assets/plugins/contact_me.js"></script>
     <!-- Scale images-->
     <script src="assets/plugins/ofi.min.js"></script>
     <!-- Slider-->
@@ -940,9 +944,14 @@
     <!-- Filter and sorting images-->
     <script src="assets/plugins/isotope/isotope.pkgd.min.js"></script>
     <script src="assets/plugins/isotope/imagesLoaded.js"></script>
-    
+    <!-- User map-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTT9aubJ0gogViF7U4TTMHBNssGnBx9U0"></script>
+    <!-- Maps customization-->
+    <script src="assets/js/map-custom.js"></script>
+
     <!--User customization-->
     <script src="assets/js/custom.js"></script>
+
 
   </body>
 </html>

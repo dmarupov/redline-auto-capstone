@@ -4,37 +4,31 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
         <title>RED LINE AUTO LLC</title>
-      <style>
-         .login{
-             position:fixed;
-             top: 50%;
-             left:50%;
-             transform: translate(-50%, -50%);
-         }
-      </style>
+        <link href="assets/css/login.css" rel="stylesheet">
       </head>
       <body>
+        <div class="container">
+          <form name="login">
+            <label for="usrname">Username</label>
+            <input type="text" id="usrname" name="usrname" required><br />
+        
+            <label for="psw">Password</label>
+          <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+          title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required><br />
+          <input type="button" onclick="validate()" value="Login"/>
+          <input type="reset" value="Cancel"/>
+                  </form>
+        </div>
+        
+        <div id="message">
+          <h3>Password must contain the following:</h3>
+          <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+          <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+          <p id="number" class="invalid">A <b>number</b></p>
+          <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+        </div> 
 
-<div>
-  <form>
+        <script src="assets/js/login.js"></script>
 
-    <div class="login">
-      <label id="uname"><b>Username</b></label>
-      <input type="text" placeholder="Enter Username" name="uname" required>
-<br /><br />
-
-      <label id="psw"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
-<br /><br />
-      <label>
-        <input type="checkbox" checked="checked" name="remember"> Remember me
-      </label>
-   <br /><br />
-        <button type="submit" onclick="document.getElementById('id01').style.display='block'" class="loginbtn">Login</button>
-        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-      <span class="psw">Forgot <a href="administrator.html">password?</a></span>
-    </div>
-  </form>
-</div> 
       </body>
   </html>
