@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
+    <title>Inventory Report</title>
+      
+     <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+      
+    <link href="assets/css/master.css" rel="stylesheet">
+    <style>
+        table{
+           color:black;
+           margin:20px;
+           border:1px solid black;
+        }
+        
+        th{
+            border:1px solid black;
+            text-align: center;
+            vertical-align: center;
+            font-weight:bold
+        }
+        ul{
+            list-style: none;
+            border:.1px solid black;
+            margin:0px
+        }
+        p{
+            margin:20px;
+            width:100px;
+            color:black
+        }
+    </style>
+  
+  </head>
+<body>
+    <table style="width:98%">
+    <tr>
+        <th>Vehicle ID</th>
+        <th>Vehicle VIN</th>
+        <th>Vehicle Make</th>
+        <th>Vehicle Model</th>
+        <th>Vehicle Year</th>
+        <th>Vehicle Transmission</th>
+        <th>Vehicle Drive Train</th>
+        <th>Vehicle Color</th>
+        <th>Vehicle Description</th>
+        <th>Vehicle Type</th>
+        <th>Vehicle Price</th>
+        <th>Vehicle Milage</th>
+    </tr>
+    <tr>
+        <td id='ID'></td>
+        <td id='VIN'></td>
+        <td id='Make'></td>
+        <td id='Model'></td>
+        <td id='Year'></td>
+        <td id='Transmission'></td>
+        <td id='DriveTrain'></td>
+        <td id='Color'></td>
+        <td id='Description'></td>
+        <td id='Type'></td>
+        <td id='Price'></td>
+        <td id='Milage'></td>
+    </tr>
+    </table>
+
+    <br />
+   <div id="addbox">
+        <p>
+            <INPUT type="button" value="Back" onclick="window.location.href='inventory-report.html'">
+          </p>
+       </div>
+        <script src="assets/js/inventoryReport.js"></script>
+</body>
+</html>

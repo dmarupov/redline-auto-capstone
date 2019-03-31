@@ -247,8 +247,43 @@
             <div class="col-md-3 col-md-pull-9">
               <aside class="l-sidebar">
                 <form class="b-filter bg-grey">
-                  <h3 class="b-filter__title">Find Your Car <i class="ic flaticon-sedan-car-front"></i></h3>
-                  <div class="b-filter__inner">
+                  <h3 class="b-filter__title">Find Your Car <i class="ic flaticon-sedan-car-front"></i></h3><br />
+                      <div class="b-filter__group">
+                      <div class="b-filter__group-title">Body style</div>
+                      <div class="b-filter-type">
+                        <div class="b-filter-type__item">
+                          <input class="b-filter-type__input" id="typePickup" type="checkbox" />
+                          <label class="b-filter-type__label" for="typePickup"><i class="b-filter-type__icon flaticon-sedan-car-model"></i><span class="b-filter-type__title">SEDAN</span>
+                          </label>
+                        </div>
+                        <div class="b-filter-type__item">
+                          <input class="b-filter-type__input" id="typeSuv" type="checkbox" />
+                          <label class="b-filter-type__label" for="typeSuv"><i class="b-filter-type__icon flaticon-car-2"></i><span class="b-filter-type__title">MINICAR</span>
+                          </label>
+                        </div>
+                        <div class="b-filter-type__item">
+                          <input class="b-filter-type__input" id="typeCoupe" type="checkbox" />
+                          <label class="b-filter-type__label" for="typeCoupe"><i class="b-filter-type__icon flaticon-cabrio-car"></i><span class="b-filter-type__title">CONVERTIBLE</span>
+                          </label>
+                        </div>
+                        <div class="b-filter-type__item">
+                          <input class="b-filter-type__input" id="typeConvertible" type="checkbox" checked="checked" />
+                          <label class="b-filter-type__label" for="typeConvertible"><i class="b-filter-type__icon flaticon-coupe-car"></i><span class="b-filter-type__title">COUPE</span>
+                          </label>
+                        </div>
+                        <div class="b-filter-type__item">
+                          <input class="b-filter-type__input" id="typeSedan" type="checkbox" />
+                          <label class="b-filter-type__label" for="typeSedan"><i class="b-filter-type__icon flaticon-car-suv"></i><span class="b-filter-type__title">SUV</span>
+                          </label>
+                        </div>
+                        <div class="b-filter-type__item">
+                          <input class="b-filter-type__input" id="typeMinicar" type="checkbox" />
+                          <label class="b-filter-type__label" for="typeMinicar"><i class="b-filter-type__icon flaticon-pick-up"></i><span class="b-filter-type__title">PICKUP</span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="b-filter__inner">
                     <div class="b-filter__group">
                       <div class="b-filter__group-title">keyword</div>
                       <input class="form-control" type="text" placeholder="Keyword..." />
@@ -296,41 +331,7 @@
                         <div class="js-slider-numbers" data-step="1000" data-start="30000" data-end="50000" data-min="10000" data-max="70000" data-prefix="$"></div>
                       </div>
                     </div>
-                    <div class="b-filter__group">
-                      <div class="b-filter__group-title">Body style</div>
-                      <div class="b-filter-type">
-                        <div class="b-filter-type__item">
-                          <input class="b-filter-type__input" id="typePickup" type="checkbox" />
-                          <label class="b-filter-type__label" for="typePickup"><i class="b-filter-type__icon flaticon-sedan-car-model"></i><span class="b-filter-type__title">SEDAN</span>
-                          </label>
-                        </div>
-                        <div class="b-filter-type__item">
-                          <input class="b-filter-type__input" id="typeSuv" type="checkbox" />
-                          <label class="b-filter-type__label" for="typeSuv"><i class="b-filter-type__icon flaticon-car-2"></i><span class="b-filter-type__title">MINICAR</span>
-                          </label>
-                        </div>
-                        <div class="b-filter-type__item">
-                          <input class="b-filter-type__input" id="typeCoupe" type="checkbox" />
-                          <label class="b-filter-type__label" for="typeCoupe"><i class="b-filter-type__icon flaticon-cabrio-car"></i><span class="b-filter-type__title">CONVERTIBLE</span>
-                          </label>
-                        </div>
-                        <div class="b-filter-type__item">
-                          <input class="b-filter-type__input" id="typeConvertible" type="checkbox" checked="checked" />
-                          <label class="b-filter-type__label" for="typeConvertible"><i class="b-filter-type__icon flaticon-coupe-car"></i><span class="b-filter-type__title">COUPE</span>
-                          </label>
-                        </div>
-                        <div class="b-filter-type__item">
-                          <input class="b-filter-type__input" id="typeSedan" type="checkbox" />
-                          <label class="b-filter-type__label" for="typeSedan"><i class="b-filter-type__icon flaticon-car-suv"></i><span class="b-filter-type__title">SUV</span>
-                          </label>
-                        </div>
-                        <div class="b-filter-type__item">
-                          <input class="b-filter-type__input" id="typeMinicar" type="checkbox" />
-                          <label class="b-filter-type__label" for="typeMinicar"><i class="b-filter-type__icon flaticon-pick-up"></i><span class="b-filter-type__title">PICKUP</span>
-                          </label>
-                        </div>
-                      </div>
-                    </div>
+                
                   </div>
                 </form>
                 <!-- end .b-filter-->
