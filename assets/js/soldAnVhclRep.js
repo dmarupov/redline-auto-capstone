@@ -4,15 +4,21 @@ request.open('GET', 'http://localhost:8080/report', true)
 request.onload = function() {
   // Begin accessing JSON data here
   var data = JSON.parse(this.response)
-  
+  var year = new Date().getFullYear();
   if (request.status >= 200 && request.status < 400) {
     data.forEach(make => {
-        console.log(make.VHCL_MAKE + ": " + make.VHCL_MODL);
+        console.log("10: " + make.VHCL_SLDY + ": " + year);
     });
-    var vehicles = data; 
-    for(var i = 0, l = vehicles.length; i < l; i++){
-         var vehicle = vehicles[i];   
-   makeList(vehicle);}
+  
+  var vehicles = data; 
+  for(var i = 0, l = vehicles.length; i < l; i++){
+     var vehicle = vehicles[i];   
+     console.log("16: " + year + ":" + vehicle.VHCL_SLDY);
+     if (year == vehicle.VHCL_SLDY)
+     {
+        makeList(vehicle);
+     }
+  }   
 }
 }
 
@@ -103,7 +109,7 @@ function makeList(vehicle) {
       var listMilage = document.createElement('li');
       
       // Add the item text
-      listSoldDate.innerHTML = vehicleData[i].VHCL_SOLDDATE;
+      listSoldDate.innerHTML = vehicleData[i].VHCL_SLDM + " " + vehicleData[i].VHCL_SLDD + " " + vehicleData[i].VHCL_SLDY;
       listID.innerHTML = vehicleData[i].VHCL_ID;
       listVIN.innerHTML = vehicleData[i].VHCL_VIN;
       listYear.innerHTML = vehicleData[i].VHCL_YEAR;
