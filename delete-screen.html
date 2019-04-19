@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
-    <title>Inventory Report</title>
+    <title>Delete Vehicle</title>
       
      <link rel="icon" href="favicon.ico" type="image/x-icon"/>
      <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
@@ -22,21 +22,15 @@
         }
        #addbox{
             color:black;
-            margin-left: 1%;
-            text-align:center
-        }
-        @media print{
-            #addbox{
-                display:none;
-            }
+            margin-left: 1%
         }
     </style>
   
   </head>
 <body>
-    <table style="width:98%" id="table">
+    <table style="width:98%" id = "deleteTable">
     <tr>
-        <th>Vehicle ID</th>
+        <th>Delete Vehicle</th>
         <th>Vehicle VIN</th>
         <th>Vehicle Make</th>
         <th>Vehicle Model</th>
@@ -53,16 +47,10 @@
 
     <br />
    <div id="addbox">
-        <p>
-            <INPUT type="button" value="Back" onclick="window.location.href='inventory-report.html'">
-            <input type="button" onclick="myFunction()" value="Print" />
-          </p>
-       </div>
-        <script src="assets/js/inventoryReport.js"></script>
-        <script>
-                function myFunction() {
-                  window.print();
-                }
-                </script>
-    </body>
-    </html>
+        <INPUT type="button" value="Back" onclick="window.location.href='delete.html'">
+        <INPUT type="button" value="Delete" onclick="window.location.href='delete-screen.html'">
+        </div>
+ 
+        <script src="assets/js/deleteVehicleSearch.js"></script>       
+</body>
+</html>

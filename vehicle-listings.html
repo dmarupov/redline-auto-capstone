@@ -10,7 +10,7 @@
       
     <link href="assets/css/master.css" rel="stylesheet">
     <style>
-        #test{
+        #searchResults{
             display: contents
         }
     .image{
@@ -18,6 +18,7 @@
         height: 300px;
         margin-right: 10px;
         margin-left:2px;
+        margin-top:10px;
         float:left
     } 
    ul{
@@ -37,22 +38,30 @@
     }
     .price{
     text-align: right;   
-  top: 6px;
-  right: 500px;
-  height: 46px;
-  padding: 0 17px 0 27px;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 20px;
-  margin-top: 75px;
-  margin-bottom: 100px
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: -40px;
+    margin-bottom: 160px;
      } 
+     .vin{
+      text-align: left;   
+      font-size: 20px;
+      font-weight: 700;
+      margin-top: 50px;
+     } 
+
+    .advSearch{
+      width: 200px;
+      color: black;
+      padding-left: 0px;
+      margin-left: -200px
+     }
     </style>
   
   </head>
 
 
-  <body>
+  <body onload='getAdvVehicles()'>
     <!-- Loader-->
     <div id="page-preloader"><span class="spinner border-t_second_b border-t_prim_a"></span></div>
     <!-- Loader end-->
@@ -224,7 +233,7 @@
                 </div>
 
                 <div class="section-goods">
-                  <div class="b-goods-group b-goods-group_list" id="test">                    
+                  <div class="b-goods-group b-goods-group_list" id="searchResults">                    
 
 </div>
                   <div class="text-center">
@@ -252,87 +261,65 @@
                       <div class="b-filter__group-title">Body style</div>
                       <div class="b-filter-type">
                         <div class="b-filter-type__item">
-                          <input class="b-filter-type__input" id="typePickup" type="checkbox" />
-                          <label class="b-filter-type__label" for="typePickup"><i class="b-filter-type__icon flaticon-sedan-car-model"></i><span class="b-filter-type__title">SEDAN</span>
+                          <input class="b-filter-type__input" id="typeSedan" type="checkbox" value="sedan"/>
+                          <label class="b-filter-type__label" for="typeSedan"><i class="b-filter-type__icon flaticon-sedan-car-model"></i><span class="b-filter-type__title">SEDAN</span>
+                          </label>
+                        </div>
+                        <div class="b-filter-type__item">
+                          <input class="b-filter-type__input" id="typeHatchback" type="checkbox" />
+                          <label class="b-filter-type__label" for="typeHatchback"><i class="b-filter-type__icon flaticon-car-2"></i><span class="b-filter-type__title">HATCHBACK</span>
+                          </label>
+                        </div>
+                        <div class="b-filter-type__item">
+                          <input class="b-filter-type__input" id="typeConvertible" type="checkbox" />
+                          <label class="b-filter-type__label" for="typeConvertible"><i class="b-filter-type__icon flaticon-cabrio-car"></i><span class="b-filter-type__title">CONVERTIBLE</span>
+                          </label>
+                        </div>
+                        <div class="b-filter-type__item">
+                          <input class="b-filter-type__input" id="typeCoupe" type="checkbox" checked="checked" />
+                          <label class="b-filter-type__label" for="typeCoupe"><i class="b-filter-type__icon flaticon-coupe-car"></i><span class="b-filter-type__title">COUPE</span>
                           </label>
                         </div>
                         <div class="b-filter-type__item">
                           <input class="b-filter-type__input" id="typeSuv" type="checkbox" />
-                          <label class="b-filter-type__label" for="typeSuv"><i class="b-filter-type__icon flaticon-car-2"></i><span class="b-filter-type__title">MINICAR</span>
+                          <label class="b-filter-type__label" for="typeSuv"><i class="b-filter-type__icon flaticon-car-suv"></i><span class="b-filter-type__title">SUV</span>
                           </label>
                         </div>
                         <div class="b-filter-type__item">
-                          <input class="b-filter-type__input" id="typeCoupe" type="checkbox" />
-                          <label class="b-filter-type__label" for="typeCoupe"><i class="b-filter-type__icon flaticon-cabrio-car"></i><span class="b-filter-type__title">CONVERTIBLE</span>
-                          </label>
-                        </div>
-                        <div class="b-filter-type__item">
-                          <input class="b-filter-type__input" id="typeConvertible" type="checkbox" checked="checked" />
-                          <label class="b-filter-type__label" for="typeConvertible"><i class="b-filter-type__icon flaticon-coupe-car"></i><span class="b-filter-type__title">COUPE</span>
-                          </label>
-                        </div>
-                        <div class="b-filter-type__item">
-                          <input class="b-filter-type__input" id="typeSedan" type="checkbox" />
-                          <label class="b-filter-type__label" for="typeSedan"><i class="b-filter-type__icon flaticon-car-suv"></i><span class="b-filter-type__title">SUV</span>
-                          </label>
-                        </div>
-                        <div class="b-filter-type__item">
-                          <input class="b-filter-type__input" id="typeMinicar" type="checkbox" />
-                          <label class="b-filter-type__label" for="typeMinicar"><i class="b-filter-type__icon flaticon-pick-up"></i><span class="b-filter-type__title">PICKUP</span>
+                          <input class="b-filter-type__input" id="typePickup" type="checkbox" />
+                          <label class="b-filter-type__label" for="typePickup"><i class="b-filter-type__icon flaticon-pick-up"></i><span class="b-filter-type__title">PICKUP</span>
                           </label>
                         </div>
                       </div>
                     </div>
-                    <div class="b-filter__inner">
-                    <div class="b-filter__group">
-                      <div class="b-filter__group-title">keyword</div>
-                      <input class="form-control" type="text" placeholder="Keyword..." />
-                    </div>
-                    <div class="b-filter__group">
-                      <div class="b-filter__group-title">Vehicle Type</div>
-                      <select class="selectpicker" data-width="100%" title="All Types" multiple data-max-options="1">
-                        <option>Type 1</option>
-                        <option>Type 2</option>
-                        <option>Type 3</option>
-                      </select>
-                    </div>
+                                      
                     <div class="b-filter__group">
                       <div class="b-filter__group-title">Make</div>
-                      <select class="selectpicker" data-width="100%" title="All Makes" multiple data-max-options="1">
-                        <option>Make 1</option>
-                        <option>Make 2</option>
-                      </select>
+                      <select class="selectpicker" onchange="getSelectedModelId(this)" id="select-make" data-width="100%"
+                  title="Select Make" multiple data-max-options="1">
+                </select>
                     </div>
                     <div class="b-filter__group">
                       <div class="b-filter__group-title">Model Year</div>
                       <div class="ui-filter-slider">
-                        <div class="js-slider-numbers" data-step="1" data-start="2005" data-end="2010" data-min="2000" data-max="2018" data-prefix=""></div>
+                        <div class="js-slider-numbers" id="year" data-step="1" data-start="2005" data-end="2019" data-min="2000" data-max="2020" data-prefix=""></div>
                       </div>
                     </div>
                     <div class="b-filter__group">
                       <div class="b-filter__group-title">Models</div>
-                      <select class="selectpicker" data-width="100%" title="All Models" multiple data-max-options="1">
-                        <option>Model 1</option>
-                        <option>Model 2</option>
-                        <option>Model 3</option>
-                      </select>
-                    </div>
-                    <div class="b-filter__group">
-                      <div class="b-filter__group-title">fuel type</div>
-                      <select class="selectpicker" data-width="100%" title="All Fuel Types" multiple data-max-options="1">
-                        <option>Type 1</option>
-                        <option>Type 2</option>
-                        <option>Type 3</option>
-                      </select>
+                      <select id="select-model" data-width="100%" style="width:260px; height:40px; border-color:rgb(243, 242, 242)" data-max-options="1"
+                      title="Select Model">
+                    </select>
                     </div>
                     <div class="b-filter__group">
                       <div class="b-filter__group-title">Filter Price</div>
                       <div class="ui-filter-slider">
-                        <div class="js-slider-numbers" data-step="1000" data-start="30000" data-end="50000" data-min="10000" data-max="70000" data-prefix="$"></div>
+                        <div class="js-slider-numbers" id="priceRange" data-step="1000" data-start="30000" data-end="50000" data-min="10000" data-max="70000" data-prefix="$"></div>
                       </div>
                     </div>
-                
-                  </div>
+                    <div class="b-filter-main__btns">
+                        <button class="advSearch" onclick="getAdvVehicles()" type="button">find it now</button>
+                       </div>
                 </form>
                 <!-- end .b-filter-->
               </aside>
@@ -434,7 +421,10 @@
     <!-- ++++++++++++-->
     <!-- SCRIPTS-->
     <!-- ++++++++++++-->
-    <script src="assets/js/vehicles.js"></script>
+    <!-- <script src="assets/js/vehicles.js"></script> -->
+    <script src="assets/js/advSearchRestfulapiscript.js"></script>
+    <script src="assets/js/advVehicleSearch.js"></script>
+    <script src="assets/js/custom-functions.js"></script>
     <script src="assets/js/jquery-1.12.4.min.js"></script>
     <script src="assets/js/jquery-migrate-1.2.1.js"></script>
 

@@ -28,7 +28,6 @@ function getSelectedModelId(modelId) {
     var data = JSON.parse(this.response);
 
     if (requestModel.status >= 200 && requestModel.status < 400) {
-      getYearDropDown();
       //Reset select-model
       var i = selectBox.length;
       while (selectBox.length != 0) {
@@ -48,27 +47,6 @@ function getSelectedModelId(modelId) {
 }
 
 
-function getYearDropDown() {
-  var requestYear = new XMLHttpRequest();
-  var selectBox = document.getElementById('select-year');
-  requestYear.open('GET', 'http://localhost:8080/yeardropdownlst', true);
-
-  requestYear.onload = function () {
-    // Begin accessing JSON data here
-    var data = JSON.parse(this.response);
-
-    if (requestYear.status >= 200 && requestYear.status < 400) {
-      selectBox.options.add(new Option("Select a Year", 00));
-      data.forEach(year => {
-        selectBox.options.add(new Option(year.YEAR_DESC, year.YEAR_ID));
-      });
-    } else {
-      console.log('error');
-    }
-  }
-  requestYear.send();
-}
-
 function myFunc(id) {
   var selectBox = document.getElementById('select-model');
   var model = new Option('101', 'stuff')
@@ -78,4 +56,10 @@ function myFunc(id) {
 }
 
 
+function myFunc(id) {
+  var selectBox = document.getElementById('select-model');
+  var model = new Option('101', 'stuff')
+  selectBox.options.add(model);
+  document.getElementById("label1").innerHTML = model.value + " It works!";
 
+}

@@ -11,30 +11,32 @@
     <link href="assets/css/master.css" rel="stylesheet">
     <style>
         table{
-            border-collapse: collapse;
-            margin-left:1%
+           color:black;
+           margin:20px;
+           border:1px solid black;
         }
-        table, th, td{
-            color:black;
-            border: 1px solid black;
-            text-align: center
-            
+        
+        th{
+            border:1px solid black;
+            text-align: center;
+            vertical-align: center;
+            font-weight:bold
         }
-        #addbox{
-            color:black;
-            margin-left: 1%;
-            text-align:center
+        ul{
+            list-style: none;
+            border:.1px solid black;
+            margin:0px
         }
-        @media print{
-            #addbox{
-                display:none;
-            }
+        p{
+            margin:20px;
+            width:100px;
+            color:black
         }
     </style>
   
   </head>
 <body>
-    <table style="width:98%" id="table">
+    <table style="width:98%">
     <tr>
         <th>Sold Date</th>
         <th>Vehicle ID</th>
@@ -50,20 +52,29 @@
         <th>Vehicle Price</th>
         <th>Vehicle Milage</th>
     </tr>
+    <tr>
+        <td id='soldDate'></td>
+        <td id='ID'></td>
+        <td id='VIN'></td>
+        <td id='Make'></td>
+        <td id='Model'></td>
+        <td id='Year'></td>
+        <td id='Transmission'></td>
+        <td id='DriveTrain'></td>
+        <td id='Color'></td>
+        <td id='Description'></td>
+        <td id='Type'></td>
+        <td id='Price'></td>
+        <td id='Milage'></td>
+    </tr>
     </table>
 
     <br />
     <div id="addbox">
          <p>
              <INPUT type="button" value="Back" onclick="window.location.href='quarterly-report.html'">
-                <input type="button" onclick="myFunction()" value="Print" />
            </p>
         </div>
-        <script src="assets/js/soldQr1VhclRep.js"></script>
-        <script>
-                function myFunction() {
-                  window.print();
-                }
-                </script>
-    </body>
-    </html>
+        <script src="assets/js/maxReport.js"></script>
+</body>
+</html>

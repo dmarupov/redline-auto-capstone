@@ -1,95 +1,135 @@
 <!DOCTYPE html>
 <html lang="zxx">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
-    <title>RED LINE AUTO LLC</title>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
+  <title>RED LINE AUTO LLC</title>
+
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+  <link href="assets/css/master.css" rel="stylesheet">
+  <style>
+      #test{
+          display: contents;
+          
+      }
+  .image{
+      width: 300px;
+      height: 300px;
+      margin-right: 10px;
+      float:left
+  } 
+ ul{
+     list-style: none;
+     color:black;
+ }
+ .item{
       
-     <link rel="icon" href="favicon.ico" type="image/x-icon"/>
-     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
-      
-    <link href="assets/css/master.css" rel="stylesheet">
-  
-  </head>
+      font-size:30px;
+      vertical-align: 0%;
+      text-align: left; 
+      font-weight: bold
+  }
+  .desc{
+         font-size:20px;
+         vertical-align: 0%
+  }
+  .price{
+  text-align: right;   
+  top: 6px;
+  right: 500px;
+  height: 46px;
+  padding: 0 17px 0 27px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  margin-bottom: 100px;
+  border-bottom: 1px solid gray
+   } 
+   .vin{
+      text-align: left;   
+      font-size: 20px;
+      font-weight: 700;
+      margin-top: 50px;
+     } 
+  </style>
+</head>
 
 
-  <body>
-    <!-- Loader-->
-    <div id="page-preloader"><span class="spinner border-t_second_b border-t_prim_a"></span></div>
-    <!-- Loader end-->
+<body>
+  <!-- Loader-->
+  <div id="page-preloader"><span class="spinner border-t_second_b border-t_prim_a"></span></div>
+  <!-- Loader end-->
 
 
-    <!-- ========================== -->
-    <!-- SEARCH MODEL  -->
-    <!-- ========================== -->
+  <!-- ========================== -->
+  <!-- SEARCH MODEL  -->
+  <!-- ========================== -->
 
-    <div class="header-search">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
-            <div class="navbar-search">
-              <form action="#" method="get" id="search-global-form" class="search-global">
-                <input type="text" placeholder="Type to search" autocomplete="off" name="s" id="search" value="" class="search-global__input">
-                <button class="search-global__btn"><i class="icon fa fa-search"></i></button>
-                <div class="search-global__note">Begin typing your search above and press return to search.</div>
-              </form>
-            </div>
+  <div class="header-search">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
+          <div class="navbar-search">
+            <form action="#" method="get" id="search-global-form" class="search-global">
+              <input type="text" placeholder="Type to search" autocomplete="off" name="s" id="search" value=""
+                class="search-global__input">
+              <button class="search-global__btn"><i class="icon fa fa-search"></i></button>
+              <div class="search-global__note">Begin typing your search above and press return to search.</div>
+            </form>
           </div>
         </div>
       </div>
-      <button type="button" class="search-close search-form_close close"><i class="fa fa-times"></i></button>
     </div>
+    <button type="button" class="search-close search-form_close close"><i class="fa fa-times"></i></button>
+  </div>
 
 
 
 
-      <div data-off-canvas="slidebar-5 left overlay" class="mobile-slidebar-menu">
-      <button class="menu-mobile-button visible-xs-block js-toggle-mobile-slidebar toggle-menu-button">
-        <span class="toggle-menu-button-icon"><span></span> <span></span> <span></span> <span></span>
-          <span></span> <span></span></span>
-      </button>
-          
-          
-            <ul id="menu-main-menu" class="yamm main-menu nav navbar-nav  menu-marker-arrow">
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="about.html">About</a></li>
-                  <li><a href="vehicle-listings.html">Inventory</a></li>
-                  <li><a href="offers.html">Services</a></li>
-                  <li class=""><a href="contact.html">Contact</a></li>
-                </ul>
-                  
-          
-
-    </div>
+  <div data-off-canvas="slidebar-5 left overlay" class="mobile-slidebar-menu">
+    <button class="menu-mobile-button visible-xs-block js-toggle-mobile-slidebar toggle-menu-button">
+      <span class="toggle-menu-button-icon"><span></span> <span></span> <span></span> <span></span>
+        <span></span> <span></span></span>
+    </button>
 
 
+    <ul id="menu-main-menu" class="yamm main-menu nav navbar-nav  menu-marker-arrow">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="vehicle-listings.html">Inventory</a></li>
+      <li><a href="offers.html">Services</a></li>
+      <li class=""><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- ========================== -->
+  <!-- FULL SCREEN MENU  -->
+  <!-- ========================== -->
+
+  <div class="wrap-fixed-menu" id="fixedMenu">
+    <nav class="fullscreen-center-menu">
+      <div class="menu-main-menu-container">
+        <ul id="menu-main-menu-1" class="nav navbar-nav">
+          <li class=""><a href="index.html">Home</a></li>
+          <li class=""><a href="vehicle-listings.html">Inventory</a></li>
+          <li class=""><a href="about.html">About</a></li>
+          <li class=""><a href="offers.html">Services</a></li>
+          <li class=""><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <button type="button" class="fullmenu-close"><i class="fa fa-times"></i></button>
+  </div>
 
 
-    <!-- ========================== -->
-    <!-- FULL SCREEN MENU  -->
-    <!-- ========================== -->
-
-    <div class="wrap-fixed-menu" id="fixedMenu">
-      <nav class="fullscreen-center-menu">
-        <div class="menu-main-menu-container">
-          <ul id="menu-main-menu-1" class="nav navbar-nav">
-            <li class=""><a href="index.html">Home</a></li>
-            <li class=""><a href="vehicle-listings.html">Inventory</a></li>
-            <li class=""><a href="about.html">About</a></li>
-            <li class=""><a href="offers.html">Services</a></li>
-            <li class=""><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-      <button type="button" class="fullmenu-close"><i class="fa fa-times"></i></button>
-    </div>
+  <div class="l-theme animated-css" data-header="sticky" data-header-top="200">
 
 
-    <div class="l-theme animated-css"  data-header="sticky" data-header-top="200"  >
-
-      
-      <!-- HEADER -->
-      <header class="header
+    <!-- HEADER -->
+    <header class="header
         header-normal-width
         navbar-fixed-top
 
@@ -101,857 +141,571 @@
 
         header1--trans-black--menu-marker-arrow-normal-0-1-70-screen-1-1-1-1">
 
-        <div class="container container-boxed-width">
-          <nav id="nav" class="navbar">
-            <div class="container ">
-              <div class="header-navibox-1">
-                <button class="menu-mobile-button visible-xs-block js-toggle-mobile-slidebar toggle-menu-button ">
-                  <span class="toggle-menu-button-icon"><span></span> <span></span> <span></span> <span></span>
-                    <span></span> <span></span></span>
-                </button>
-                <a class="navbar-brand scroll" href="index.html"> </a>
-                    <a href="index.html"><img class="normal-logo img-responsive" src="assets/media/logo.png" alt="logo"><img class="scroll-logo img-responsive hidden-xs" src="assets/media/logo.png" alt="logo"></a>
-                  </div>
+      <div class="container container-boxed-width">
+        <nav id="nav" class="navbar">
+          <div class="container ">
+            <div class="header-navibox-1">
+              <button class="menu-mobile-button visible-xs-block js-toggle-mobile-slidebar toggle-menu-button ">
+                <span class="toggle-menu-button-icon"><span></span> <span></span> <span></span> <span></span>
+                  <span></span> <span></span></span>
+              </button>
+              <a class="navbar-brand scroll" href="index.html"> </a>
+              <a href="index.html"><img class="normal-logo img-responsive" src="assets/media/logo.png" alt="logo"><img
+                  class="scroll-logo img-responsive hidden-xs" src="assets/media/logo.png" alt="logo"></a>
+            </div>
 
-              <div class="header-navibox-4">
-                <div class="header-cart">
-                  <a href="#"><i class="theme-fonts-ShoppingCart" aria-hidden="true"></i></a>
-                  <span class="header-cart-count">0</span>
-                </div>
+            <div class="header-navibox-4">
+              <div class="header-cart">
+                <a href="#"><i class="theme-fonts-ShoppingCart" aria-hidden="true"></i></a>
+                <span class="header-cart-count">0</span>
               </div>
-              <div class="header-navibox-3">
-                <ul class="nav navbar-nav hidden-xs">
-                  <li class="header-search-icon"><a class="btn_header_search" href="#"><i class="fa fa-search"></i></a></li>
-                  <li>
-                    <button class=" js-toggle-screen toggle-menu-button ">
-                    <span class="toggle-menu-button-icon"><span></span> <span></span> <span></span> <span></span> <span></span> <span></span></span>
+            </div>
+            <div class="header-navibox-3">
+              <ul class="nav navbar-nav hidden-xs">
+                <li class="header-search-icon"><a class="btn_header_search" href="#"><i class="fa fa-search"></i></a>
+                </li>
+                <li>
+                  <button class=" js-toggle-screen toggle-menu-button ">
+                    <span class="toggle-menu-button-icon"><span></span> <span></span> <span></span> <span></span>
+                      <span></span> <span></span></span>
                   </button>
-                  </li>
-                </ul>
-              </div>
+                </li>
+              </ul>
+            </div>
 
-              <div class="header-navibox-2">
-                <ul id="menu-main-menu-2" class="yamm main-menu nav navbar-nav  menu-marker-arrow">
-                  <li><a href="index.html">Home</a>
-                  <li><a href="about.html">About</a></li>
-                  <li><a href="vehicle-listings.html">Inventory</a></li>
-                  <li><a href="offers.html">Services</a></li>
-                  <li class=""><a href="contact.html">Contact</a></li>
-                </ul>
-
-              </div>
+            <div class="header-navibox-2">
+              <ul id="menu-main-menu-2" class="yamm main-menu nav navbar-nav  menu-marker-arrow">
+                <li><a href="index.html">Home</a>
+                <li><a href="about.html">About</a></li>
+                <li><a href="vehicle-listings.html">Inventory</a></li>
+                <li><a href="offers.html">Services</a></li>
+                <li class=""><a href="contact.html">Contact</a></li>
+              </ul>
 
             </div>
-          </nav>
-        </div>
-      </header>
-      <!-- end header -->
-          
 
-      <div class="b-main-slider slider-pro" id="main-slider" data-slider-width="100%" data-slider-height="950px" data-slider-arrows="true" data-slider-buttons="false">
-        <div class="sp-slides">
-          <!-- Slide 1-->
-          <div class="sp-slide">
-            <div class="b-main-slider__item ">
-              <img class="sp-image" src="assets/media/b-main-slider/1.jpg" alt="slider" />
-              <div class="sp-layer" data-width="100%" data-show-transition="left" data-hide-transition="left" data-show-duration="2000" data-show-delay="200" data-hide-delay="400">
-                <span class="b-main-slider__label">drive your dream car</span>
-              </div>
-              <div class="sp-layer" data-width="100%" data-show-transition="left" data-hide-transition="left" data-show-duration="2000" data-show-delay="400" data-hide-delay="400"><div class="b-main-slider__title">Lexus NX 300 2018</div></div>
-              <div class="sp-layer" data-width="100%" data-show-transition="left" data-hide-transition="left" data-show-duration="2000" data-show-delay="800" data-hide-delay="400"><div class="b-main-slider__info">Refreshed Style, High Performance & Outstanding Technology</div></div>
-              <div class="sp-layer" data-width="100%" data-show-transition="left" data-hide-transition="left" data-show-duration="2000" data-show-delay="1000" data-hide-delay="400"><div class="b-main-slider__btns"><span class="b-main-slider__price">$35,290</span><a class="b-main-slider__link" href="#">Test Drive</a></div></div>
-            </div>
           </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header -->
 
-          <!-- Slide 2-->
-          <div class="sp-slide">
-            <div class="b-main-slider__item b-main-slider__item_2">
-              <img class="sp-image" src="assets/media/b-main-slider/2.jpg" alt="slider" />
-              <div class="sp-layer" data-width="100%" data-show-transition="left" data-hide-transition="left" data-show-duration="2000" data-show-delay="200" data-hide-delay="400"><span class="b-main-slider__label">drive your dream car</span></div>
-              <div class="sp-layer" data-width="100%" data-show-transition="left" data-hide-transition="left" data-show-duration="2000" data-show-delay="400" data-hide-delay="400"><div class="b-main-slider__title">want to buy your favourite Suv?</div></div>
-              <div class="sp-layer" data-width="100%" data-show-transition="left" data-hide-transition="left" data-show-duration="2000" data-show-delay="800" data-hide-delay="400"><div class="b-main-slider__info">We’ve got a Big stock of SUV’s from various brands - Get yours now!</div></div>
-              <div class="sp-layer" data-width="100%" data-show-transition="left" data-hide-transition="left" data-show-duration="2000" data-show-delay="1000" data-hide-delay="400"><div class="b-main-slider__btns"><span class="b-main-slider__btn">Find Your Vehicle</span></div></div>
+
+    <div class="b-main-slider slider-pro" id="main-slider" data-slider-width="100%" data-slider-height="950px"
+      data-slider-arrows="true" data-slider-buttons="false">
+      <div class="sp-slides">
+        <!-- Slide 1-->
+        <div class="sp-slide">
+          <div class="b-main-slider__item ">
+            <!-- This is where the image is being pulled from. Need to change it to an image from DB -->
+            <img class="sp-image" alt="slider" id="main-slider-img"/>
+            <div class="sp-layer" data-width="100%" data-show-transition="left" data-hide-transition="left"
+              data-show-duration="2000" data-show-delay="200" data-hide-delay="400">
+              <span class="b-main-slider__label">drive your dream car</span>
             </div>
-          </div>
-
-          <!-- Slide 3-->
-          <div class="sp-slide">
-            <div class="b-main-slider__item">
-              <img class="sp-image" src="assets/media/b-main-slider/3.jpg" alt="slider" />
-              <div class="sp-layer" data-width="100%" data-show-transition="left" data-hide-transition="left" data-show-duration="2000" data-show-delay="200" data-hide-delay="400"><span class="b-main-slider__label">drive your dream car</span></div>
-              <div class="sp-layer" data-width="100%" data-show-transition="left" data-hide-transition="left" data-show-duration="2000" data-show-delay="400" data-hide-delay="400"><div class="b-main-slider__title">toyota venza 2018</div></div>
-              <div class="sp-layer" data-width="100%" data-show-transition="left" data-hide-transition="left" data-show-duration="2000" data-show-delay="800" data-hide-delay="400"><div class="b-main-slider__info">Refreshed Style, High Performance & Outstanding Technology</div></div>
-              <div class="sp-layer" data-width="100%" data-show-transition="left" data-hide-transition="left" data-show-duration="2000" data-show-delay="1000" data-hide-delay="400"><div class="b-main-slider__btns"><span class="b-main-slider__price">$35,290</span><a class="b-main-slider__link" href="#">Test Drive</a></div></div>
-
+            <div class="sp-layer" data-width="100%" data-show-transition="left" data-hide-transition="left"
+              data-show-duration="2000" data-show-delay="400" data-hide-delay="400">
+              <div class="b-main-slider__title" id="main-slider-title">Lexus NX 300 2018</div>
+            </div>
+            <div class="sp-layer" data-width="100%" data-show-transition="left" data-hide-transition="left"
+              data-show-duration="2000" data-show-delay="800" data-hide-delay="400">
+              <div class="b-main-slider__info">Refreshed Style, High Performance & Outstanding Technology</div>
+            </div>
+            <div class="sp-layer" data-width="100%" data-show-transition="left" data-hide-transition="left"
+              data-show-duration="2000" data-show-delay="1000" data-hide-delay="400">
+              <div class="b-main-slider__btns"><span class="b-main-slider__price" id="main-slider_price">$35,290</span><a
+                  class="b-main-slider__link" href="contact.html">Test Drive</a></div>
             </div>
           </div>
         </div>
-      </div><!-- end b-main-slider -->
+
+        <!-- Slide 2-->
+       
+
+        <!-- Slide 3-->
+        <div class="sp-slide">
+          <div class="b-main-slider__item">
+            <img class="sp-image" src="assets/media/b-main-slider/3.jpg" alt="slider" id="main-slider-img2"/>
+            <div class="sp-layer" data-width="100%" data-show-transition="left" data-hide-transition="left"
+              data-show-duration="2000" data-show-delay="200" data-hide-delay="400"><span
+                class="b-main-slider__label">drive your dream car</span></div>
+            <div class="sp-layer" data-width="100%" data-show-transition="left" data-hide-transition="left"
+              data-show-duration="2000" data-show-delay="400" data-hide-delay="400">
+              <div class="b-main-slider__title" id="main-slider-title2">toyota venza 2018</div>
+            </div>
+            <div class="sp-layer" data-width="100%" data-show-transition="left" data-hide-transition="left"
+              data-show-duration="2000" data-show-delay="800" data-hide-delay="400">
+              <div class="b-main-slider__info">Refreshed Style, High Performance & Outstanding Technology</div>
+            </div>
+            <div class="sp-layer" data-width="100%" data-show-transition="left" data-hide-transition="left"
+              data-show-duration="2000" data-show-delay="1000" data-hide-delay="400">
+              <div class="b-main-slider__btns"><span class="b-main-slider__price" id="main-slider_price2">$35,290</span><a
+                  class="b-main-slider__link" href="contact.html">Test Drive</a></div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div><!-- end b-main-slider -->
 
 
-      <div class="bg-gray">
-        <div class="container">
-            
-          <div class="row">
-            <div class="col-xs-12">
-              <div class="ui-wrap-figure"><span class="ui-top-figure ui-top-figure_gray"></span></div>
-              <form class="b-filter-main">
-                <div class="b-filter-main__select-group">
-                  <select class="selectpicker" onchange="getSelectedModelId(this)" id="select-make"
-                          data-width="100%" title="Select Make" multiple data-max-options="1" >
-                  </select>
-                  <span class="b-filter-main__label">Makers of Vehicle</span>
-                </div>
-                <div class="b-filter-main__select-group">
-                  <select id="select-model" data-width="100%" style="width:200px; height:48px;" 
-                           data-max-options="1" title="Select Model">
-                  </select>
-                  <span class="b-filter-main__label">Model of the Vehicle</span>
-                  <label id="label1"></label>
-                </div>
-                <div class="b-filter-main__select-group">
-                  <select id="select-year" data-width="100%" style="width:200px; height:48px;" 
-                    data-max-options="1" title="Vehicle Year">
+    <div class="bg-gray">
+      <div class="container">
 
-                  </select>
-                  <span class="b-filter-main__label">Year of the  Vehicle</span>
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="ui-wrap-figure"><span class="ui-top-figure ui-top-figure_gray"></span></div>
+            <form class="b-filter-main">
+              <div class="b-filter-main__select-group">
+                <select class="selectpicker" onchange="getSelectedModelId(this)" id="select-make" data-width="100%"
+                  title="Select Make" multiple data-max-options="1">
+                </select>
+                <span class="b-filter-main__label">Makers of Vehicle</span>
+              </div>
+              <div class="b-filter-main__select-group">
+                <select id="select-model" data-width="100%" style="width:200px; height:48px;" data-max-options="1"
+                  title="Select Model">
+                </select>
+                <span class="b-filter-main__label">Model of the Vehicle</span>
+                <label id="label1"></label>
+              </div>
+              <div class="b-filter-main__select-group">
+                <select id="select-year" data-width="100%" style="width:200px; height:48px;" data-max-options="1"
+                  title="Vehicle Year">
+
+                </select>
+                <span class="b-filter-main__label">Year of the Vehicle</span>
+              </div>
+              <div class="b-filter-main__slider">
+                <div class="ui-filter-slider">
+                  <div class="js-slider-numbers" id="priceRange" data-step="1000" data-start="30000" data-end="50000" data-min="10000"
+                    data-max="70000" data-prefix="$"></div>
                 </div>
-                <div class="b-filter-main__slider">
-                  <div class="ui-filter-slider">
-                    <div class="js-slider-numbers" data-step="1000" data-start="30000" data-end="50000" data-min="10000" data-max="70000" data-prefix="$"></div>
+              </div>
+              <div class="b-filter-main__btns">
+                <button class="btn btn-primary" onclick="getVehicles()" type="button">find it now</button>
+                <!-- <button class="btn btn-primary" type="button">find it now</button> -->
+                <a class="b-filter-main__link" href="vehicle-listings.html">ADVANCED SEARCH</a>
+              </div>
+            </form>
+            <div id="vehicleListing"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="container" id="offers">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="ui-wrap-figure"><span class="ui-top-figure"></span></div>
+          <section class="section-default">
+            <h2 class="ui-title-block">Monthly <span class="text-primary">Specials</span></h2>
+            <div class="ui-subtitle">Some vehicles you would like to buy</div>
+            <div class="ui-decor"></div>
+            <div class="b-goods-group js-scroll-content">
+              <div class="b-goods b-goods_img-right clearfix">
+                <div class="b-goods__img">
+                  <img class="img-scale" src="assets/media/b-goods/360x230/1.jpg" id="msImg1" alt="foto">
+                </div>
+                <div class="b-goods__inner">
+                  <div class="b-goods__header">
+                    <div class="b-goods__name" id="msTitle1">BMW Luxury 528i</div>
+                    <div class="b-goods__meta">
+                      <div class="b-goods__meta-item"><i class="ic fa fa-map-marker"></i>Austin, MI</div>
+                      <div class="b-goods__meta-item"><i class="ic ic_lg fa fa-star-o js-favorite"></i></div>
+                    </div>
+                  </div>
+
+                  <div class="b-goods__info">Duis aute reprehender voluptate velit esacium fugiat nula pariatur
+                    excepteurd magna aliqua uet enim ad minim veniam quis nostrud ... </div>
+                  <div class="b-goods__footer">
+                    <ul class="b-goods-descr list-unstyled">
+                      <li class="b-goods-descr__item">
+                        <span class="ic flaticon-gauge"></span>
+                        <span class="b-goods-descr__info" id="msMilage1">25,700 k</span>
+                      </li>
+                      <li class="b-goods-descr__item">
+                        <span class="ic flaticon-car-side-view"></span>
+                        <span class="b-goods-descr__info" id="msYear1"> 2017</span>
+                      </li>
+                      <li class="b-goods-descr__item">
+                        <span class="ic flaticon-gearshift"></span>
+                        <span class="b-goods-descr__info" id="msTransmission1">Auto</span>
+                      </li>
+                      <li class="b-goods-descr__item">
+                        <span class="ic flaticon-engine"></span>
+                        <span class="b-goods-descr__info" id="msDrivetrain1">320 hp</span>
+                      </li>
+                    </ul>
+                    <span class="b-goods__price" id="msPrice1">$245,000</span>
                   </div>
                 </div>
-                <div class="b-filter-main__btns">
-                  <button class="btn btn-primary">find it now</button>
-                  <a class="b-filter-main__link" href="#">ADVANCED SEARCH</a>
+              </div>
+              <div class="b-goods b-goods_img-right clearfix">
+                <div class="b-goods__img">
+                  <img class="img-scale" src="assets/media/b-goods/360x230/2.jpg" id="msImg2" alt="foto">
                 </div>
-              </form>
+                <div class="b-goods__inner">
+                  <div class="b-goods__header">
+                    <div class="b-goods__name" id="msTitle2">Mercedes Benz S 63</div>
+                    <div class="b-goods__meta">
+                      <div class="b-goods__meta-item"><i class="ic fa fa-map-marker"></i>Austin, MI</div>
+                      <div class="b-goods__meta-item"><i class="ic ic_lg fa fa-star-o js-favorite"></i></div>
+                    </div>
+                  </div>
+
+                  <div class="b-goods__info">Duis aute reprehender voluptate velit esacium fugiat nula pariatur
+                    excepteurd magna aliqua uet enim ad minim veniam quis nostrud ... </div>
+                  <div class="b-goods__footer">
+                    <ul class="b-goods-descr list-unstyled">
+                      <li class="b-goods-descr__item">
+                        <span class="ic flaticon-gauge"></span>
+                        <span class="b-goods-descr__info" id="msMilage2">25,700 k</span>
+                      </li>
+                      <li class="b-goods-descr__item">
+                        <span class="ic flaticon-car-side-view"></span>
+                        <span class="b-goods-descr__info" id="msYear2"> 2017</span>
+                      </li>
+                      <li class="b-goods-descr__item">
+                        <span class="ic flaticon-gearshift"></span>
+                        <span class="b-goods-descr__info" id="msTransmission2">Auto</span>
+                      </li>
+                      <li class="b-goods-descr__item">
+                        <span class="ic flaticon-engine"></span>
+                        <span class="b-goods-descr__info" id="msDrivetrain2">320 hp</span>
+                      </li>
+                    </ul>
+                    <span class="b-goods__price" id="msPrice2">$245,000</span>
+                  </div>
+                </div>
+              </div>
+              <div class="b-goods b-goods_img-right clearfix">
+                <div class="b-goods__img">
+                  <img class="img-scale" src="assets/media/b-goods/360x230/3.jpg" id="msImg3" alt="foto">
+                </div>
+                <div class="b-goods__inner">
+                  <div class="b-goods__header">
+                    <div class="b-goods__name" id="msTitle3">Bentley Flying Spur</div>
+                    <div class="b-goods__meta">
+                      <div class="b-goods__meta-item"><i class="ic fa fa-map-marker"></i>Austin, MI</div>
+                      <div class="b-goods__meta-item"><i class="ic ic_lg fa fa-star-o js-favorite"></i></div>
+                    </div>
+                  </div>
+
+                  <div class="b-goods__info">Duis aute reprehender voluptate velit esacium fugiat nula pariatur
+                    excepteurd magna aliqua uet enim ad minim veniam quis nostrud ... </div>
+                  <div class="b-goods__footer">
+                    <ul class="b-goods-descr list-unstyled">
+                      <li class="b-goods-descr__item">
+                        <span class="ic flaticon-gauge"></span>
+                        <span class="b-goods-descr__info" id="msMilage3">25,700 k</span>
+                      </li>
+                      <li class="b-goods-descr__item">
+                        <span class="ic flaticon-car-side-view"></span>
+                        <span class="b-goods-descr__info" id="msYear3"> 2017</span>
+                      </li>
+                      <li class="b-goods-descr__item">
+                        <span class="ic flaticon-gearshift"></span>
+                        <span class="b-goods-descr__info" id="msTransmission3">Auto</span>
+                      </li>
+                      <li class="b-goods-descr__item">
+                        <span class="ic flaticon-engine"></span>
+                        <span class="b-goods-descr__info" id="msDrivetrain3">320 hp</span>
+                      </li>
+                    </ul>
+                    <span class="b-goods__price" id="msPrice3">$245,000</span>
+                  </div>
+                </div>
+              </div>
+              <div class="b-goods b-goods_img-right clearfix">
+                <div class="b-goods__img">
+                  <img class="img-scale" src="assets/media/b-goods/360x230/4.jpg" id="msImg4" alt="foto">
+                </div>
+                <div class="b-goods__inner">
+                  <div class="b-goods__header">
+                    <div class="b-goods__name" id="msTitle4">Opel Chiron E636</div>
+                    <div class="b-goods__meta">
+                      <div class="b-goods__meta-item"><i class="ic fa fa-map-marker"></i>Austin, MI</div>
+                      <div class="b-goods__meta-item"><i class="ic ic_lg fa fa-star-o js-favorite"></i></div>
+                    </div>
+                  </div>
+
+                  <div class="b-goods__info">Duis aute reprehender voluptate velit esacium fugiat nula pariatur
+                    excepteurd magna aliqua uet enim ad minim veniam quis nostrud ... </div>
+                  <div class="b-goods__footer">
+                    <ul class="b-goods-descr list-unstyled">
+                      <li class="b-goods-descr__item">
+                        <span class="ic flaticon-gauge"></span>
+                        <span class="b-goods-descr__info" id="msMilage4">25,700 k</span>
+                      </li>
+                      <li class="b-goods-descr__item">
+                        <span class="ic flaticon-car-side-view"></span>
+                        <span class="b-goods-descr__info" id="msYear4"> 2017</span>
+                      </li>
+                      <li class="b-goods-descr__item">
+                        <span class="ic flaticon-gearshift"></span>
+                        <span class="b-goods-descr__info" id="msTransmission4">Auto</span>
+                      </li>
+                      <li class="b-goods-descr__item">
+                        <span class="ic flaticon-engine"></span>
+                        <span class="b-goods-descr__info" id="msDrivetrain4">320 hp</span>
+                      </li>
+                    </ul>
+                    <span class="b-goods__price" id="msPrice4">$245,000</span>
+                  </div>
+                </div>
+              </div>
+              <div class="b-goods b-goods_img-right clearfix">
+                <div class="b-goods__img">
+                  <img class="img-scale" src="assets/media/b-goods/360x230/5.jpg" id="msImg5" alt="foto">
+                </div>
+                <div class="b-goods__inner">
+                  <div class="b-goods__header">
+                    <div class="b-goods__name" id="msTitle5">Lexus GX 490i Hybird</div>
+                    <div class="b-goods__meta">
+                      <div class="b-goods__meta-item"><i class="ic fa fa-map-marker"></i>Austin, MI</div>
+                      <div class="b-goods__meta-item"><i class="ic ic_lg fa fa-star-o js-favorite"></i></div>
+                    </div>
+                  </div>
+
+                  <div class="b-goods__info">Duis aute reprehender voluptate velit esacium fugiat nula pariatur
+                    excepteurd magna aliqua uet enim ad minim veniam quis nostrud ... </div>
+                  <div class="b-goods__footer">
+                    <ul class="b-goods-descr list-unstyled">
+                      <li class="b-goods-descr__item">
+                        <span class="ic flaticon-gauge"></span>
+                        <span class="b-goods-descr__info" id="msMilage5">25,700 k</span>
+                      </li>
+                      <li class="b-goods-descr__item">
+                        <span class="ic flaticon-car-side-view"></span>
+                        <span class="b-goods-descr__info" id="msYear5"> 2017</span>
+                      </li>
+                      <li class="b-goods-descr__item">
+                        <span class="ic flaticon-gearshift"></span>
+                        <span class="b-goods-descr__info" id="msTransmission5">Auto</span>
+                      </li>
+                      <li class="b-goods-descr__item">
+                        <span class="ic flaticon-engine"></span>
+                        <span class="b-goods-descr__info" id="msDrivetrain5">320 hp</span>
+                      </li>
+                    </ul>
+                    <span class="b-goods__price" id="msPrice5">$245,000</span>
+                  </div>
+                </div>
+              </div>
+              <div class="b-goods b-goods_img-right clearfix">
+                <div class="b-goods__img">
+                  <img class="img-scale" src="assets/media/b-goods/360x230/6.jpg" id="msImg6" alt="foto">
+                </div>
+                <div class="b-goods__inner">
+                  <div class="b-goods__header">
+                    <div class="b-goods__name" id="msTitle6">2018 Chevrolet Corvette</div>
+                    <div class="b-goods__meta">
+                      <div class="b-goods__meta-item"><i class="ic fa fa-map-marker"></i>Austin, MI</div>
+                      <div class="b-goods__meta-item"><i class="ic ic_lg fa fa-star-o js-favorite"></i></div>
+                    </div>
+                  </div>
+
+                  <div class="b-goods__info">Duis aute reprehender voluptate velit esacium fugiat nula pariatur
+                    excepteurd magna aliqua uet enim ad minim veniam quis nostrud ... </div>
+                  <div class="b-goods__footer">
+                    <ul class="b-goods-descr list-unstyled">
+                      <li class="b-goods-descr__item">
+                        <span class="ic flaticon-gauge"></span>
+                        <span class="b-goods-descr__info" id="msMilage6">25,700 k</span>
+                      </li>
+                      <li class="b-goods-descr__item">
+                        <span class="ic flaticon-car-side-view"></span>
+                        <span class="b-goods-descr__info" id="msYear6"> 2017</span>
+                      </li>
+                      <li class="b-goods-descr__item">
+                        <span class="ic flaticon-gearshift"></span>
+                        <span class="b-goods-descr__info" id="msTransmission6">Auto</span>
+                      </li>
+                      <li class="b-goods-descr__item">
+                        <span class="ic flaticon-engine"></span>
+                        <span class="b-goods-descr__info" id="msDrivetrain6">320 hp</span>
+                      </li>
+                    </ul>
+                    <span class="b-goods__price" id="msPrice6">$245,000</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+           
+
+
+
+
+
+
+
+          </section><!-- end section_default -->
+        </div><!-- end col -->
+      </div><!-- end row -->
+    </div><!-- end container -->
+
+    <footer class="footer">
+      <div class="section-bg section-bg_dark section-bg-05">
+        <div class="ui-decor-corners"><span class="ui-decor-corners__left"></span><span
+            class="ui-decor-corners__right"></span></div>
+        <div class="footer__top bg-inner">
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12">
+                <img class="footer__logo center-block" src="assets/media/logo-footer.png" alt="Red Line Auto LLC ">
+                <div class="ui-decor"></div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="footer__section">
+                  <div class="footer__title">About Red Line Auto LLC </div>
+                  <div class="footer__info">Red Line Auto LLC is local licensed car dealership located in the City of
+                    Omaha off of I-80 on 84th Street.</div>
+                  <div class="footer-contacts">
+                    <span class="footer-contacts__title">Phone:</span>
+                    <a href="tel:+16234759820" class="footer-contacts__info footer-contacts__info_lg">+1 (531)
+                      200-3879</a>
+                  </div>
+                  <div class="footer-contacts">
+                    <span class="footer-contacts__title">email:</span>
+                    <a href="mailto:info@redlineauto.us" class="footer-contacts__info">info@redlineauto.us</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-2">
+                <div class="footer__section">
+                  <div class="footer__title">Useful Links</div>
+                  <ul class="footer__list list-unstyled">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="vehicle-listings.html">Inventory</a></li>
+                    <li><a href="offers.html">Services</a></li>
+                    <li class=""><a href="contact.html">Contact</a></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <div class="footer__section">
+                  <div class="footer__title">Working Hours</div>
+                  <div class="footer-time">
+                    <span class="footer-time__name">Weekdays:</span>
+                    <span class="footer-time__info">9:00am – 6:00pm</span>
+                  </div>
+                  <div class="footer-time">
+                    <span class="footer-time__name">Saturday:</span>
+                    <span class="footer-time__info">10:00am – 3:00pm</span>
+                  </div>
+                  <div class="footer-time">
+                    <span class="footer-time__name">Sunday:</span>
+                    <span class="footer-time__info">Closed</span>
+                  </div>
+                  <ul class="footer-soc list-unstyled">
+                    <li class="footer-soc__item"><a class="footer-soc__link" href="#"><i
+                          class="ic fa fa-facebook"></i></a></li>
+                    <li class="footer-soc__item"><a class="footer-soc__link" href="#"><i
+                          class="ic fa fa-twitter"></i></a></li>
+                    <li class="footer-soc__item"><a class="footer-soc__link" href="#"><i
+                          class="ic fa fa-youtube-play"></i></a></li>
+                    <li class="footer-soc__item"><a class="footer-soc__link" href="#"><i
+                          class="ic fa fa-google-plus"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="footer__section">
+                  <div class="footer__title">Showroom</div>
+                  <div class="footer-address">
+                    <div class="footer-address__title">Red Line Auto LLC </div>
+                    <div class="footer-address__info">8520 I St<br>Omaha NE<br>68127</div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-            
+          <span class="ui-scroll-top js-up"></span>
         </div>
       </div>
 
-     <section class="section-bg section-bg_dark section-bg-01" >
-        <div class="bg-inner">
-          <div class="ui-decor-corners"><span class="ui-decor-corners__left"></span><span class="ui-decor-corners__right"></span></div>
-          <div class="section-default">
-            <div class="container">
-              <div class="row">
-                <div class="col-xs-12">
-                  <h2 class="ui-title-block">Types of <span class="text-primary"> Vehicles</span></h2>
-                  <div class="ui-subtitle">the vehicles we deal in</div>
-                  <div class="b-type-slider">
-                    <div class="owl-carousel owl-theme enable-owl-carousel"
-                      data-pagination="true"
-                      data-navigation="false"
-                      data-single-item="true"
-                      data-auto-play="700000"
-                      data-transition-style="fade"
-                      data-main-text-animation="true"
-                      data-after-init-delay="3000"
-                      data-after-move-delay="1000"
-                      data-stop-on-hover="true">
-
-                      <div class="b-type-slider__group">
-                        <div class="b-type-slider__item">
-                          <a class="b-type-slider__link clearfix" href="#">
-                            <div class="b-type-slider__img"><img class="img-responsive" src="assets/media/b-type-slider/1.png" alt="img"></div>
-                            <div class="b-type-slider__inner">
-                              <div class="b-type-slider__name">Pickups</div>
-                              <div class="b-type-slider__info">345 offers starting from $42,000</div>
-                            </div>
-                          </a>
-                        </div>
-                        <div class="b-type-slider__item">
-                          <a class="b-type-slider__link clearfix" href="#">
-                            <div class="b-type-slider__img"><img class="img-responsive" src="assets/media/b-type-slider/2.png" alt="img"></div>
-                            <div class="b-type-slider__inner">
-                              <div class="b-type-slider__name">Luxury Cars</div>
-                              <div class="b-type-slider__info">287 offers starting from $56,800</div>
-                            </div>
-                          </a>
-                        </div>
-                        <div class="b-type-slider__item">
-                          <a class="b-type-slider__link clearfix" href="#">
-                            <div class="b-type-slider__img"><img class="img-responsive" src="assets/media/b-type-slider/3.png" alt="img"></div>
-                            <div class="b-type-slider__inner">
-                              <div class="b-type-slider__name">Sedans</div>
-                              <div class="b-type-slider__info">526 offers starting from $35,000</div>
-                            </div>
-                          </a>
-                        </div>
-                        <div class="b-type-slider__item">
-                          <a class="b-type-slider__link clearfix" href="#">
-                            <div class="b-type-slider__img"><img class="img-responsive" src="assets/media/b-type-slider/4.png" alt="img"></div>
-                            <div class="b-type-slider__inner">
-                              <div class="b-type-slider__name">SUV’s</div>
-                              <div class="b-type-slider__info">709 offers starting from $25,600</div>
-                            </div>
-                          </a>
-                        </div>
-                      </div>
-
-                      <div class="b-type-slider__group">
-                        <div class="b-type-slider__item">
-                          <a class="b-type-slider__link clearfix" href="#">
-                            <div class="b-type-slider__img"><img class="img-responsive" src="assets/media/b-type-slider/1.png" alt="img"></div>
-                            <div class="b-type-slider__inner">
-                              <div class="b-type-slider__name">Pickups</div>
-                              <div class="b-type-slider__info">345 offers starting from $42,000</div>
-                            </div>
-                          </a>
-                        </div>
-                        <div class="b-type-slider__item">
-                          <a class="b-type-slider__link clearfix" href="#">
-                            <div class="b-type-slider__img"><img class="img-responsive" src="assets/media/b-type-slider/2.png" alt="img"></div>
-                            <div class="b-type-slider__inner">
-                              <div class="b-type-slider__name">Luxury Cars</div>
-                              <div class="b-type-slider__info">287 offers starting from $56,800</div>
-                            </div>
-                          </a>
-                        </div>
-                        <div class="b-type-slider__item">
-                          <a class="b-type-slider__link clearfix" href="#">
-                            <div class="b-type-slider__img"><img class="img-responsive" src="assets/media/b-type-slider/3.png" alt="img"></div>
-                            <div class="b-type-slider__inner">
-                              <div class="b-type-slider__name">Sedans</div>
-                              <div class="b-type-slider__info">526 offers starting from $35,000</div>
-                            </div>
-                          </a>
-                        </div>
-                        <div class="b-type-slider__item">
-                          <a class="b-type-slider__link clearfix" href="#">
-                            <div class="b-type-slider__img"><img class="img-responsive" src="assets/media/b-type-slider/4.png" alt="img"></div>
-                            <div class="b-type-slider__inner">
-                              <div class="b-type-slider__name">SUV’s</div>
-                              <div class="b-type-slider__info">709 offers starting from $25,600</div>
-                            </div>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div><!-- end col -->
-              </div><!-- end row -->
-            <div class="border-section-bottom"></div>
-            </div><!-- end container -->
-          </div>
-        </div><!-- end bg-inner -->
-      </section><!-- end section -->
-
-
-
-      <div class="container" id="offers">
+      <div class="container">
         <div class="row">
           <div class="col-xs-12">
             <div class="ui-wrap-figure"><span class="ui-top-figure"></span></div>
-            <section class="section-default">
-              <h2 class="ui-title-block">Monthly <span class="text-primary">Specials</span></h2>
-              <div class="ui-subtitle">Some vehicles you would like to buy</div>
-              <div class="ui-decor"></div>
-              <div class="b-goods-group js-scroll-content">
-                <div class="b-goods b-goods_img-right clearfix">
-                  <div class="b-goods__img">
-                    <img class="img-scale" src="assets/media/b-goods/360x230/1.jpg" alt="foto">
-                  </div>
-                  <div class="b-goods__inner">
-                    <div class="b-goods__header">
-                      <div class="b-goods__name">BMW Luxury 528i</div>
-                      <div class="b-goods__meta">
-                        <div class="b-goods__meta-item"><i class="ic fa fa-map-marker"></i>Austin, MI</div>
-                        <div class="b-goods__meta-item"><i class="ic ic_lg fa fa-star-o js-favorite"></i></div>
-                      </div>
-                    </div>
-
-                    <div class="b-goods__info">Duis aute reprehender voluptate velit esacium fugiat nula pariatur excepteurd magna aliqua uet enim ad minim veniam quis nostrud ... </div>
-                    <div class="b-goods__footer">
-                      <ul class="b-goods-descr list-unstyled">
-                        <li class="b-goods-descr__item">
-                          <span class="ic flaticon-gauge"></span>
-                          <span class="b-goods-descr__info">25,700 k</span>
-                        </li>
-                        <li class="b-goods-descr__item">
-                          <span class="ic flaticon-car-side-view"></span>
-                          <span class="b-goods-descr__info"> 2017</span>
-                        </li>
-                        <li class="b-goods-descr__item">
-                          <span class="ic flaticon-gearshift"></span>
-                          <span class="b-goods-descr__info">Auto</span>
-                        </li>
-                        <li class="b-goods-descr__item">
-                          <span class="ic flaticon-engine"></span>
-                          <span class="b-goods-descr__info">320 hp</span>
-                        </li>
-                      </ul>
-                      <span class="b-goods__price">$245,000</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="b-goods b-goods_img-right clearfix">
-                  <div class="b-goods__img">
-                    <img class="img-scale" src="assets/media/b-goods/360x230/2.jpg" alt="foto">
-                  </div>
-                  <div class="b-goods__inner">
-                    <div class="b-goods__header">
-                      <div class="b-goods__name">Mercedes Benz S 63</div>
-                      <div class="b-goods__meta">
-                        <div class="b-goods__meta-item"><i class="ic fa fa-map-marker"></i>Austin, MI</div>
-                        <div class="b-goods__meta-item"><i class="ic ic_lg fa fa-star-o js-favorite"></i></div>
-                      </div>
-                    </div>
-
-                    <div class="b-goods__info">Duis aute reprehender voluptate velit esacium fugiat nula pariatur excepteurd magna aliqua uet enim ad minim veniam quis nostrud ... </div>
-                    <div class="b-goods__footer">
-                      <ul class="b-goods-descr list-unstyled">
-                        <li class="b-goods-descr__item">
-                          <span class="ic flaticon-gauge"></span>
-                          <span class="b-goods-descr__info">25,700 k</span>
-                        </li>
-                        <li class="b-goods-descr__item">
-                          <span class="ic flaticon-car-side-view"></span>
-                          <span class="b-goods-descr__info"> 2017</span>
-                        </li>
-                        <li class="b-goods-descr__item">
-                          <span class="ic flaticon-gearshift"></span>
-                          <span class="b-goods-descr__info">Auto</span>
-                        </li>
-                        <li class="b-goods-descr__item">
-                          <span class="ic flaticon-engine"></span>
-                          <span class="b-goods-descr__info">320 hp</span>
-                        </li>
-                      </ul>
-                      <span class="b-goods__price">$245,000</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="b-goods b-goods_img-right clearfix">
-                  <div class="b-goods__img">
-                    <img class="img-scale" src="assets/media/b-goods/360x230/3.jpg" alt="foto">
-                  </div>
-                  <div class="b-goods__inner">
-                    <div class="b-goods__header">
-                      <div class="b-goods__name">Bentley Flying Spur</div>
-                      <div class="b-goods__meta">
-                        <div class="b-goods__meta-item"><i class="ic fa fa-map-marker"></i>Austin, MI</div>
-                        <div class="b-goods__meta-item"><i class="ic ic_lg fa fa-star-o js-favorite"></i></div>
-                      </div>
-                    </div>
-
-                    <div class="b-goods__info">Duis aute reprehender voluptate velit esacium fugiat nula pariatur excepteurd magna aliqua uet enim ad minim veniam quis nostrud ... </div>
-                    <div class="b-goods__footer">
-                      <ul class="b-goods-descr list-unstyled">
-                        <li class="b-goods-descr__item">
-                          <span class="ic flaticon-gauge"></span>
-                          <span class="b-goods-descr__info">25,700 k</span>
-                        </li>
-                        <li class="b-goods-descr__item">
-                          <span class="ic flaticon-car-side-view"></span>
-                          <span class="b-goods-descr__info"> 2017</span>
-                        </li>
-                        <li class="b-goods-descr__item">
-                          <span class="ic flaticon-gearshift"></span>
-                          <span class="b-goods-descr__info">Auto</span>
-                        </li>
-                        <li class="b-goods-descr__item">
-                          <span class="ic flaticon-engine"></span>
-                          <span class="b-goods-descr__info">320 hp</span>
-                        </li>
-                      </ul>
-                      <span class="b-goods__price">$245,000</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="b-goods b-goods_img-right clearfix">
-                  <div class="b-goods__img">
-                    <img class="img-scale" src="assets/media/b-goods/360x230/4.jpg" alt="foto">
-                  </div>
-                  <div class="b-goods__inner">
-                    <div class="b-goods__header">
-                      <div class="b-goods__name">Opel Chiron E636</div>
-                      <div class="b-goods__meta">
-                        <div class="b-goods__meta-item"><i class="ic fa fa-map-marker"></i>Austin, MI</div>
-                        <div class="b-goods__meta-item"><i class="ic ic_lg fa fa-star-o js-favorite"></i></div>
-                      </div>
-                    </div>
-
-                    <div class="b-goods__info">Duis aute reprehender voluptate velit esacium fugiat nula pariatur excepteurd magna aliqua uet enim ad minim veniam quis nostrud ... </div>
-                    <div class="b-goods__footer">
-                      <ul class="b-goods-descr list-unstyled">
-                        <li class="b-goods-descr__item">
-                          <span class="ic flaticon-gauge"></span>
-                          <span class="b-goods-descr__info">25,700 k</span>
-                        </li>
-                        <li class="b-goods-descr__item">
-                          <span class="ic flaticon-car-side-view"></span>
-                          <span class="b-goods-descr__info"> 2017</span>
-                        </li>
-                        <li class="b-goods-descr__item">
-                          <span class="ic flaticon-gearshift"></span>
-                          <span class="b-goods-descr__info">Auto</span>
-                        </li>
-                        <li class="b-goods-descr__item">
-                          <span class="ic flaticon-engine"></span>
-                          <span class="b-goods-descr__info">320 hp</span>
-                        </li>
-                      </ul>
-                      <span class="b-goods__price">$245,000</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="b-goods b-goods_img-right clearfix">
-                  <div class="b-goods__img">
-                    <img class="img-scale" src="assets/media/b-goods/360x230/5.jpg" alt="foto">
-                  </div>
-                  <div class="b-goods__inner">
-                    <div class="b-goods__header">
-                      <div class="b-goods__name">Lexus GX 490i Hybird</div>
-                      <div class="b-goods__meta">
-                        <div class="b-goods__meta-item"><i class="ic fa fa-map-marker"></i>Austin, MI</div>
-                        <div class="b-goods__meta-item"><i class="ic ic_lg fa fa-star-o js-favorite"></i></div>
-                      </div>
-                    </div>
-
-                    <div class="b-goods__info">Duis aute reprehender voluptate velit esacium fugiat nula pariatur excepteurd magna aliqua uet enim ad minim veniam quis nostrud ... </div>
-                    <div class="b-goods__footer">
-                      <ul class="b-goods-descr list-unstyled">
-                        <li class="b-goods-descr__item">
-                          <span class="ic flaticon-gauge"></span>
-                          <span class="b-goods-descr__info">25,700 k</span>
-                        </li>
-                        <li class="b-goods-descr__item">
-                          <span class="ic flaticon-car-side-view"></span>
-                          <span class="b-goods-descr__info"> 2017</span>
-                        </li>
-                        <li class="b-goods-descr__item">
-                          <span class="ic flaticon-gearshift"></span>
-                          <span class="b-goods-descr__info">Auto</span>
-                        </li>
-                        <li class="b-goods-descr__item">
-                          <span class="ic flaticon-engine"></span>
-                          <span class="b-goods-descr__info">320 hp</span>
-                        </li>
-                      </ul>
-                      <span class="b-goods__price">$245,000</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="b-goods b-goods_img-right clearfix">
-                  <div class="b-goods__img">
-                    <img class="img-scale" src="assets/media/b-goods/360x230/6.jpg" alt="foto">
-                  </div>
-                  <div class="b-goods__inner">
-                    <div class="b-goods__header">
-                      <div class="b-goods__name">2018 Chevrolet Corvette</div>
-                      <div class="b-goods__meta">
-                        <div class="b-goods__meta-item"><i class="ic fa fa-map-marker"></i>Austin, MI</div>
-                        <div class="b-goods__meta-item"><i class="ic ic_lg fa fa-star-o js-favorite"></i></div>
-                      </div>
-                    </div>
-
-                    <div class="b-goods__info">Duis aute reprehender voluptate velit esacium fugiat nula pariatur excepteurd magna aliqua uet enim ad minim veniam quis nostrud ... </div>
-                    <div class="b-goods__footer">
-                      <ul class="b-goods-descr list-unstyled">
-                        <li class="b-goods-descr__item">
-                          <span class="ic flaticon-gauge"></span>
-                          <span class="b-goods-descr__info">25,700 k</span>
-                        </li>
-                        <li class="b-goods-descr__item">
-                          <span class="ic flaticon-car-side-view"></span>
-                          <span class="b-goods-descr__info"> 2017</span>
-                        </li>
-                        <li class="b-goods-descr__item">
-                          <span class="ic flaticon-gearshift"></span>
-                          <span class="b-goods-descr__info">Auto</span>
-                        </li>
-                        <li class="b-goods-descr__item">
-                          <span class="ic flaticon-engine"></span>
-                          <span class="b-goods-descr__info">320 hp</span>
-                        </li>
-                      </ul>
-                      <span class="b-goods__price">$245,000</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <span class="btn-trigger-more btn btn-bdr-prim js-scroll-next">more vehicles</span>
-
-              <div class="b-goods-group clearfix js-scroll-content">
-                <div class="b-goods b-goods_img-right clearfix">
-                  <div class="b-goods__img">
-                    <img class="img-scale" src="assets/media/b-goods/360x230/1.jpg" alt="foto">
-                  </div>
-                  <div class="b-goods__inner">
-                    <div class="b-goods__header">
-                      <div class="b-goods__name">BMW Luxury 528i</div>
-                      <div class="b-goods__meta">
-                        <div class="b-goods__meta-item"><i class="ic fa fa-map-marker"></i>Austin, MI</div>
-                        <div class="b-goods__meta-item"><i class="ic ic_lg fa fa-star-o js-favorite"></i></div>
-                      </div>
-                    </div>
-
-                    <div class="b-goods__info">Duis aute reprehender voluptate velit esacium fugiat nula pariatur excepteurd magna aliqua uet enim ad minim veniam quis nostrud ... </div>
-                    <div class="b-goods__footer">
-                      <ul class="b-goods-descr list-unstyled">
-                        <li class="b-goods-descr__item">
-                          <span class="ic flaticon-gauge"></span>
-                          <span class="b-goods-descr__info">25,700 k</span>
-                        </li>
-                        <li class="b-goods-descr__item">
-                          <span class="ic flaticon-car-side-view"></span>
-                          <span class="b-goods-descr__info"> 2017</span>
-                        </li>
-                        <li class="b-goods-descr__item">
-                          <span class="ic flaticon-gearshift"></span>
-                          <span class="b-goods-descr__info">Auto</span>
-                        </li>
-                        <li class="b-goods-descr__item">
-                          <span class="ic flaticon-engine"></span>
-                          <span class="b-goods-descr__info">320 hp</span>
-                        </li>
-                      </ul>
-                      <span class="b-goods__price">$245,000</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="b-goods b-goods_img-right clearfix">
-                  <div class="b-goods__img">
-                    <img class="img-scale" src="assets/media/b-goods/360x230/2.jpg" alt="foto">
-                  </div>
-                  <div class="b-goods__inner">
-                    <div class="b-goods__header">
-                      <div class="b-goods__name">Mercedes Benz S 63</div>
-                      <div class="b-goods__meta">
-                        <div class="b-goods__meta-item"><i class="ic fa fa-map-marker"></i>Austin, MI</div>
-                        <div class="b-goods__meta-item"><i class="ic ic_lg fa fa-star-o js-favorite"></i></div>
-                      </div>
-                    </div>
-
-                    <div class="b-goods__info">Duis aute reprehender voluptate velit esacium fugiat nula pariatur excepteurd magna aliqua uet enim ad minim veniam quis nostrud ... </div>
-                    <div class="b-goods__footer">
-                      <ul class="b-goods-descr list-unstyled">
-                        <li class="b-goods-descr__item">
-                          <span class="ic flaticon-gauge"></span>
-                          <span class="b-goods-descr__info">25,700 k</span>
-                        </li>
-                        <li class="b-goods-descr__item">
-                          <span class="ic flaticon-car-side-view"></span>
-                          <span class="b-goods-descr__info"> 2017</span>
-                        </li>
-                        <li class="b-goods-descr__item">
-                          <span class="ic flaticon-gearshift"></span>
-                          <span class="b-goods-descr__info">Auto</span>
-                        </li>
-                        <li class="b-goods-descr__item">
-                          <span class="ic flaticon-engine"></span>
-                          <span class="b-goods-descr__info">320 hp</span>
-                        </li>
-                      </ul>
-                      <span class="b-goods__price">$245,000</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="b-goods b-goods_img-right clearfix">
-                  <div class="b-goods__img">
-                    <img class="img-scale" src="assets/media/b-goods/360x230/3.jpg" alt="foto">
-                  </div>
-                  <div class="b-goods__inner">
-                    <div class="b-goods__header">
-                      <div class="b-goods__name">Bentley Flying Spur</div>
-                      <div class="b-goods__meta">
-                        <div class="b-goods__meta-item"><i class="ic fa fa-map-marker"></i>Austin, MI</div>
-                        <div class="b-goods__meta-item"><i class="ic ic_lg fa fa-star-o js-favorite"></i></div>
-                      </div>
-                    </div>
-
-                    <div class="b-goods__info">Duis aute reprehender voluptate velit esacium fugiat nula pariatur excepteurd magna aliqua uet enim ad minim veniam quis nostrud ... </div>
-                    <div class="b-goods__footer">
-                      <ul class="b-goods-descr list-unstyled">
-                        <li class="b-goods-descr__item">
-                          <span class="ic flaticon-gauge"></span>
-                          <span class="b-goods-descr__info">25,700 k</span>
-                        </li>
-                        <li class="b-goods-descr__item">
-                          <span class="ic flaticon-car-side-view"></span>
-                          <span class="b-goods-descr__info"> 2017</span>
-                        </li>
-                        <li class="b-goods-descr__item">
-                          <span class="ic flaticon-gearshift"></span>
-                          <span class="b-goods-descr__info">Auto</span>
-                        </li>
-                        <li class="b-goods-descr__item">
-                          <span class="ic flaticon-engine"></span>
-                          <span class="b-goods-descr__info">320 hp</span>
-                        </li>
-                      </ul>
-                      <span class="b-goods__price">$245,000</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="b-goods b-goods_img-right clearfix">
-                  <div class="b-goods__img">
-                    <img class="img-scale" src="assets/media/b-goods/360x230/4.jpg" alt="foto">
-                  </div>
-                  <div class="b-goods__inner">
-                    <div class="b-goods__header">
-                      <div class="b-goods__name">Opel Chiron E636</div>
-                      <div class="b-goods__meta">
-                        <div class="b-goods__meta-item"><i class="ic fa fa-map-marker"></i>Austin, MI</div>
-                        <div class="b-goods__meta-item"><i class="ic ic_lg fa fa-star-o js-favorite"></i></div>
-                      </div>
-                    </div>
-
-                    <div class="b-goods__info">Duis aute reprehender voluptate velit esacium fugiat nula pariatur excepteurd magna aliqua uet enim ad minim veniam quis nostrud ... </div>
-                    <div class="b-goods__footer">
-                      <ul class="b-goods-descr list-unstyled">
-                        <li class="b-goods-descr__item">
-                          <span class="ic flaticon-gauge"></span>
-                          <span class="b-goods-descr__info">25,700 k</span>
-                        </li>
-                        <li class="b-goods-descr__item">
-                          <span class="ic flaticon-car-side-view"></span>
-                          <span class="b-goods-descr__info"> 2017</span>
-                        </li>
-                        <li class="b-goods-descr__item">
-                          <span class="ic flaticon-gearshift"></span>
-                          <span class="b-goods-descr__info">Auto</span>
-                        </li>
-                        <li class="b-goods-descr__item">
-                          <span class="ic flaticon-engine"></span>
-                          <span class="b-goods-descr__info">320 hp</span>
-                        </li>
-                      </ul>
-                      <span class="b-goods__price">$245,000</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="b-goods b-goods_img-right clearfix">
-                  <div class="b-goods__img">
-                    <img class="img-scale" src="assets/media/b-goods/360x230/5.jpg" alt="foto">
-                  </div>
-                  <div class="b-goods__inner">
-                    <div class="b-goods__header">
-                      <div class="b-goods__name">Lexus GX 490i Hybird</div>
-                      <div class="b-goods__meta">
-                        <div class="b-goods__meta-item"><i class="ic fa fa-map-marker"></i>Austin, MI</div>
-                        <div class="b-goods__meta-item"><i class="ic ic_lg fa fa-star-o js-favorite"></i></div>
-                      </div>
-                    </div>
-
-                    <div class="b-goods__info">Duis aute reprehender voluptate velit esacium fugiat nula pariatur excepteurd magna aliqua uet enim ad minim veniam quis nostrud ... </div>
-                    <div class="b-goods__footer">
-                      <ul class="b-goods-descr list-unstyled">
-                        <li class="b-goods-descr__item">
-                          <span class="ic flaticon-gauge"></span>
-                          <span class="b-goods-descr__info">25,700 k</span>
-                        </li>
-                        <li class="b-goods-descr__item">
-                          <span class="ic flaticon-car-side-view"></span>
-                          <span class="b-goods-descr__info"> 2017</span>
-                        </li>
-                        <li class="b-goods-descr__item">
-                          <span class="ic flaticon-gearshift"></span>
-                          <span class="b-goods-descr__info">Auto</span>
-                        </li>
-                        <li class="b-goods-descr__item">
-                          <span class="ic flaticon-engine"></span>
-                          <span class="b-goods-descr__info">320 hp</span>
-                        </li>
-                      </ul>
-                      <span class="b-goods__price">$245,000</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="b-goods b-goods_img-right clearfix">
-                  <div class="b-goods__img">
-                    <img class="img-scale" src="assets/media/b-goods/360x230/6.jpg" alt="foto">
-                  </div>
-                  <div class="b-goods__inner">
-                    <div class="b-goods__header">
-                      <div class="b-goods__name">2018 Chevrolet Corvette</div>
-                      <div class="b-goods__meta">
-                        <div class="b-goods__meta-item"><i class="ic fa fa-map-marker"></i>Austin, MI</div>
-                        <div class="b-goods__meta-item"><i class="ic ic_lg fa fa-star-o js-favorite"></i></div>
-                      </div>
-                    </div>
-
-                    <div class="b-goods__info">Duis aute reprehender voluptate velit esacium fugiat nula pariatur excepteurd magna aliqua uet enim ad minim veniam quis nostrud ... </div>
-                    <div class="b-goods__footer">
-                      <ul class="b-goods-descr list-unstyled">
-                        <li class="b-goods-descr__item">
-                          <span class="ic flaticon-gauge"></span>
-                          <span class="b-goods-descr__info">25,700 k</span>
-                        </li>
-                        <li class="b-goods-descr__item">
-                          <span class="ic flaticon-car-side-view"></span>
-                          <span class="b-goods-descr__info"> 2017</span>
-                        </li>
-                        <li class="b-goods-descr__item">
-                          <span class="ic flaticon-gearshift"></span>
-                          <span class="b-goods-descr__info">Auto</span>
-                        </li>
-                        <li class="b-goods-descr__item">
-                          <span class="ic flaticon-engine"></span>
-                          <span class="b-goods-descr__info">320 hp</span>
-                        </li>
-                      </ul>
-                      <span class="b-goods__price">$245,000</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section><!-- end section_default -->
-          </div><!-- end col -->
-        </div><!-- end row -->
-      </div><!-- end container -->
-
-      <footer class="footer">
-        <div class="section-bg section-bg_dark section-bg-05" >
-          <div class="ui-decor-corners"><span class="ui-decor-corners__left"></span><span class="ui-decor-corners__right"></span></div>
-          <div class="footer__top bg-inner">
-            <div class="container">
-              <div class="row">
-                <div class="col-xs-12">
-                  <img class="footer__logo center-block" src="assets/media/logo-footer.png" alt="Red Line Auto LLC ">
-                  <div class="ui-decor"></div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-4">
-                  <div class="footer__section">
-                    <div class="footer__title">About Red Line Auto LLC </div>
-                    <div class="footer__info">Red Line Auto LLC is local licensed car dealership located in the City of Omaha off of I-80 on 84th Street.</div>
-                    <div class="footer-contacts">
-                      <span class="footer-contacts__title">Phone:</span>
-                      <a href="tel:+16234759820" class="footer-contacts__info footer-contacts__info_lg">+1 (531) 200-3879</a>
-                    </div>
-                    <div class="footer-contacts">
-                      <span class="footer-contacts__title">email:</span>
-                      <a href="mailto:info@redlineauto.us" class="footer-contacts__info">info@redlineauto.us</a>
-                    </div>
-                  </div>
-                </div>
-  
-                <div class="col-md-2">
-                  <div class="footer__section">
-                    <div class="footer__title">Useful Links</div>
-                    <ul class="footer__list list-unstyled">
-                      <li><a href="index.html">Home</a></li>
-                      <li><a href="about.html">About</a></li>
-                      <li><a href="vehicle-listings.html">Inventory</a></li>
-                      <li><a href="offers.html">Services</a></li>
-                      <li class=""><a href="contact.html">Contact</a></li>
-                    </ul>
-                  </div>
-                </div>
-  
-                <div class="col-md-3">
-                  <div class="footer__section">
-                    <div class="footer__title">Working Hours</div>
-                    <div class="footer-time">
-                      <span class="footer-time__name">Weekdays:</span>
-                      <span class="footer-time__info">9:00am – 6:00pm</span>
-                    </div>
-                    <div class="footer-time">
-                      <span class="footer-time__name">Saturday:</span>
-                      <span class="footer-time__info">10:00am – 3:00pm</span>
-                    </div>
-                    <div class="footer-time">
-                      <span class="footer-time__name">Sunday:</span>
-                      <span class="footer-time__info">Closed</span>
-                    </div>
-                    <ul class="footer-soc list-unstyled">
-                      <li class="footer-soc__item"><a class="footer-soc__link" href="#"><i class="ic fa fa-facebook"></i></a></li>
-                      <li class="footer-soc__item"><a class="footer-soc__link" href="#"><i class="ic fa fa-twitter"></i></a></li>
-                      <li class="footer-soc__item"><a class="footer-soc__link" href="#"><i class="ic fa fa-youtube-play"></i></a></li>
-                      <li class="footer-soc__item"><a class="footer-soc__link" href="#"><i class="ic fa fa-google-plus"></i></a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col-md-3">
-                  <div class="footer__section">
-                    <div class="footer__title">Showroom</div>
-                    <div class="footer-address">
-                      <div class="footer-address__title">Red Line Auto LLC </div>
-                      <div class="footer-address__info">8520 I St<br>Omaha NE<br>68127</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <span class="ui-scroll-top js-up"></span>
+            <div class="copyright">Copyrights 2019 <span class="copyright__brand">Red Line Auto LLC </span> : All rights
+              reserved. <a class="copyright__link" href="#">Terms of Use</a> <a class="copyright__link" href="#">Privacy
+                Policy</a></div>
           </div>
         </div>
-  
-        <div class="container">
-          <div class="row">
-            <div class="col-xs-12">
-              <div class="ui-wrap-figure"><span class="ui-top-figure"></span></div>
-              <div class="copyright">Copyrights 2019 <span class="copyright__brand">Red Line Auto LLC </span> : All rights reserved. <a class="copyright__link" href="#">Terms of Use</a> <a class="copyright__link" href="#">Privacy Policy</a></div>
-            </div>
-          </div>
-        </div>
-      </footer>
-    </div><!-- end layout-theme -->
-    
-    <!-- ++++++++++++-->
-    <!-- SCRIPTS-->
-    <!-- ++++++++++++-->
+      </div>
+    </footer>
+  </div><!-- end layout-theme -->
 
-    <!-- Rest API call -->
-    <script src="assets/js/restfulapiscript.js"></script>
+  <!-- ++++++++++++-->
+  <!-- SCRIPTS-->
+  <!-- ++++++++++++-->
 
-    <script src="assets/js/jquery-1.12.4.min.js"></script>
-    <script src="assets/js/jquery-migrate-1.2.1.js"></script>
+  <!-- Script to use custom functions -->
+  <script src="assets/js/custom-functions.js"></script>
+  <!-- Script to slider vehicles -->
+  <script src="assets/js/slider-vehicles.js"></script>
+  <!-- Rest API call -->
+  <script src="assets/js/restfulapiscript.js"></script>
+  <!-- Script to search and get vehicles -->
+  <script src="assets/js/vehiclesearch.js"></script>
+  <!-- Script to get monthly specials -->
+  <script src="assets/js/monthly-special.js"></script>
 
-    <!-- Switcher -->
-    <script src="assets/plugins/switcher/js/dmss.js"></script>
+  <script src="assets/js/jquery-1.12.4.min.js"></script>
+  <script src="assets/js/jquery-migrate-1.2.1.js"></script>
 
-    <!-- Home slider-->
-    <script src="assets/plugins/slider-pro/jquery.sliderPro.min.js"></script>
+  <!-- Switcher -->
+  <script src="assets/plugins/switcher/js/dmss.js"></script>
 
-    <!-- Headers -->
-    <script src='assets/plugins/headers/slidebar.js'></script>
-    <script src='assets/plugins/headers/header.js'></script>
-    <script src='assets/plugins/headers/slidebars.js'></script>
-    <script src='assets/plugins/headers/doubletap.js'></script>
+  <!-- Home slider-->
+  <script src="assets/plugins/slider-pro/jquery.sliderPro.min.js"></script>
 
-    <!-- Bootstrap -->
-    <script src="assets/libs/bootstrap/js/bootstrap.min.js"></script>
+  <!-- Headers -->
+  <script src='assets/plugins/headers/slidebar.js'></script>
+  <script src='assets/plugins/headers/header.js'></script>
+  <script src='assets/plugins/headers/slidebars.js'></script>
+  <script src='assets/plugins/headers/doubletap.js'></script>
 
-    <!-- Select customization -->
-    <script src="assets/plugins/bootstrap-select/js/bootstrap-select.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="assets/libs/bootstrap/js/bootstrap.min.js"></script>
 
-    <!-- Mail scripts-->
-    <script src="assets/plugins/jqBootstrapValidation.js"></script>
-    <script src="assets/plugins/contact_me.js"></script>
-    <!-- Scale images-->
-    <script src="assets/plugins/ofi.min.js"></script>
-    <!-- Slider-->
-    <script src="assets/plugins/owl-carousel/owl.carousel.min.js"></script>
-    <!-- Progress numbers-->
-    <script src="assets/plugins/rendro-easy-pie-chart/waypoints.min.js"></script>
-    <script src="assets/plugins/rendro-easy-pie-chart/jquery.easypiechart.min.js"></script>
-    <!-- Pop-up window-->
-    <script src="assets/plugins/prettyphoto/js/jquery.prettyPhoto.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <!-- Animations-->
-    <script src="assets/plugins/wow.min.js"></script>
-    <!-- NoUiSlider-->
-    <script src="assets/plugins/noUiSlider/wNumb.js"></script>
-    <script src="assets/plugins/noUiSlider/nouislider.min.js"></script>
-    <!-- Filter and sorting images-->
-    <script src="assets/plugins/isotope/isotope.pkgd.min.js"></script>
-    <script src="assets/plugins/isotope/imagesLoaded.js"></script>
-    <!-- User map-->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTT9aubJ0gogViF7U4TTMHBNssGnBx9U0"></script>
-    <!-- Maps customization-->
-    <script src="assets/js/map-custom.js"></script>
+  <!-- Select customization -->
+  <script src="assets/plugins/bootstrap-select/js/bootstrap-select.min.js"></script>
 
-    <!--User customization-->
-    <script src="assets/js/custom.js"></script>
+  <!-- Mail scripts-->
+  <script src="assets/plugins/jqBootstrapValidation.js"></script>
+  <script src="assets/plugins/contact_me.js"></script>
+  <!-- Scale images-->
+  <script src="assets/plugins/ofi.min.js"></script>
+  <!-- Slider-->
+  <script src="assets/plugins/owl-carousel/owl.carousel.min.js"></script>
+  <!-- Progress numbers-->
+  <script src="assets/plugins/rendro-easy-pie-chart/waypoints.min.js"></script>
+  <script src="assets/plugins/rendro-easy-pie-chart/jquery.easypiechart.min.js"></script>
+  <!-- Pop-up window-->
+  <script src="assets/plugins/prettyphoto/js/jquery.prettyPhoto.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+  <!-- Animations-->
+  <script src="assets/plugins/wow.min.js"></script>
+  <!-- NoUiSlider-->
+  <script src="assets/plugins/noUiSlider/wNumb.js"></script>
+  <script src="assets/plugins/noUiSlider/nouislider.min.js"></script>
+  <!-- Filter and sorting images-->
+  <script src="assets/plugins/isotope/isotope.pkgd.min.js"></script>
+  <script src="assets/plugins/isotope/imagesLoaded.js"></script>
+  <!--User customization-->
+  <script src="assets/js/custom.js"></script>
 
 
-  </body>
+</body>
+
 </html>

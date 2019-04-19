@@ -678,7 +678,7 @@ a {
 
 .section-main {
   padding-top: 90px;
-  padding-bottom: 130px;
+  /* padding-bottom: 30px; */
 }
 .b-main-block__title {
   text-transform: uppercase;
@@ -721,7 +721,7 @@ a {
 }
 
 .b-filter-main {
-  padding-top: 70px;
+  padding-top: -5px; 
   padding-bottom: 76px;
 }
 
