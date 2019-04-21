@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="zxx">
   <head>
+        <script> if (document.cookie.indexOf("Admin=Valid") == -1) {
+                location.href = "/Login.html";
+              }</script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
     <title>Annual Report</title>
@@ -37,7 +40,6 @@
         <table style="width:98%" id="table">
         <tr>
             <th>Sold Date</th>
-            <th>Vehicle ID</th>
             <th>Vehicle VIN</th>
             <th>Vehicle Make</th>
             <th>Vehicle Model</th>
@@ -45,25 +47,37 @@
             <th>Vehicle Transmission</th>
             <th>Vehicle Drive Train</th>
             <th>Vehicle Color</th>
-            <th>Vehicle Description</th>
             <th>Vehicle Type</th>
             <th>Vehicle Price</th>
             <th>Vehicle Milage</th>
         </tr>
+    </table>
+    <div id="sales-report">
+        <table style="width:98%" >
+            <tr>
+                <td>Most Sold Vehicle: </td>
+                <td id="most-sold"></td>
+            </tr>
+            <tr>
+                <td>Least Sold Vehicle: </td>
+                <td id="least-sold"></td>
+            </tr>
         </table>
+    </div>
 
     <br />
     <div id="addbox">
-         <p>
-             <INPUT type="button" value="Back" onclick="window.location.href='annual-report.html'">
-                <input type="button" onclick="myFunction()" value="Print" />
-            </p>
-         </div>
-     <script src="assets/js/soldAnVhclRep.js"></script>
-     <script>
-             function myFunction() {
-               window.print();
-             }
-             </script>
- </body>
- </html>
+        <p>
+            <INPUT type="button" value="Back" onclick="window.location.href='annual-report.html'">
+            <input type="button" onclick="myFunction()" value="Print" />
+        </p>
+    </div>
+    <script src="assets/js/soldAnVhclRep.js"></script>
+    <script>
+        function myFunction() {
+            window.print();
+        }
+    </script>
+</body>
+
+</html>

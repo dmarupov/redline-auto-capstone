@@ -7,7 +7,7 @@ var mainSliderVhclTitle2 = document.getElementById('main-slider-title2');
 
 var mainSliderVhclBase64;
 var vehicleMake = ["Fiat", "Jaguar"]; 
-var vehicleModel = "500 Pop";
+var vehicleModel = "500";
 var vehicleYear = 2017;
 
 requestSlider.open('GET', 'http://localhost:8080/slider-imgs' + "?vehicleMake=" + vehicleMake 

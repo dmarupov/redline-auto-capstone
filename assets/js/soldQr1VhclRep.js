@@ -1,37 +1,23 @@
 var request = new XMLHttpRequest()
 
 request.open('GET', 'http://localhost:8080/report', true)
-request.onload = function() {
+request.onload = function () {
   // Begin accessing JSON data here
   var data = JSON.parse(this.response)
   var year = new Date().getFullYear();
   if (request.status >= 200 && request.status < 400) {
-    data.forEach(make => {
-        console.log(make.VHCL_SLDM + ": " + year);
-    });
-  
-  var vehicles = data; 
-  for(var i = 0, l = vehicles.length; i < l; i++){
-      var vehicle = vehicles[i];
-      console.log(year + ":" + vehicle.VHCL_SLDM);  
-      if (("JAN" == vehicle.VHCL_SLDM || "FEB" == vehicle.VHCL_SLDM || "MAR" == vehicle.VHCL_SLDM ||
-         "Jan" == vehicle.VHCL_SLDM || "Feb" == vehicle.VHCL_SLDM || "Mar" == vehicle.VHCL_SLDM) && year == vehicle.VHCL_SLDY)
-      {
+    data.forEach(vehicle => {
+      if (("JAN" == vehicle.soldMonth || "FEB" == vehicle.soldMonth || "MAR" == vehicle.soldMonth ||
+        "Jan" == vehicle.soldMonth || "Feb" == vehicle.soldMonth || "Mar" == vehicle.soldMonth) && year == vehicle.soldYear) {
         makeList(vehicle);
       }
-  }   
+    });
 }
 }
 
 request.send();
 
 function makeList(vehicle) {
-  // Establish the array which acts as a data source for the list
-  var vehicleData = [vehicle];
-
-  // Set up a loop that goes through the items in listItems one at a time
-  var numberOfListItems = vehicleData.length;
-  for (var i = 0; i < numberOfListItems; i++) {
     //Create a row for data
     var table = document.getElementById('table');
     var dataRow = document.createElement('tr');
@@ -51,19 +37,19 @@ function makeList(vehicle) {
     var listMilage = document.createElement('td');
 
     // Add the item text
-    listSoldDate.innerHTML = vehicleData[i].VHCL_SLDM + " " + vehicleData[i].VHCL_SLDD + " " + vehicleData[i].VHCL_SLDY;
-    listID.innerHTML = vehicleData[i].VHCL_ID;
-    listVIN.innerHTML = vehicleData[i].VHCL_VIN;
-    listYear.innerHTML = vehicleData[i].VHCL_YEAR;
-    listMake.innerHTML = vehicleData[i].VHCL_MAKE;
-    listModel.innerHTML = vehicleData[i].VHCL_MODL;
-    listTransmission.innerHTML = vehicleData[i].VHCL_TRNS;
-    listDriveTrain.innerHTML = vehicleData[i].VHCL_DRTN;
-    listColor.innerHTML = vehicleData[i].VHCL_COLR;
-    listDesc.innerHTML = vehicleData[i].VHCL_DESC;
-    listType.innerHTML = vehicleData[i].VHCL_TYPE;
-    listPrice.innerHTML = "$" + vehicleData[i].VHCL_PRICE;
-    listMilage.innerHTML = vehicleData[i].VHCL_MILG;
+    listSoldDate.innerHTML = vehicle.soldMonth + " " + vehicle.soldDate + " " + vehicle.soldYear;
+    listID.innerHTML = vehicle.id;
+    listVIN.innerHTML = vehicle.vin;
+    listYear.innerHTML = vehicle.year;
+    listMake.innerHTML = vehicle.make;
+    listModel.innerHTML = vehicle.model;
+    listTransmission.innerHTML = vehicle.transmission;
+    listDriveTrain.innerHTML = vehicle.driveTrain;
+    listColor.innerHTML = vehicle.color;
+    listDesc.innerHTML = vehicle.vehicleDescription;
+    listType.innerHTML = vehicle.type;
+    listPrice.innerHTML = "$" + vehicle.price;
+    listMilage.innerHTML = vehicle.milage;
 
     dataRow.appendChild(listSoldDate);
     dataRow.appendChild(listID);
@@ -80,6 +66,6 @@ function makeList(vehicle) {
     dataRow.appendChild(listMilage);
     
     table.appendChild(dataRow);
-  }
+  // }
 
 }

@@ -8,13 +8,21 @@ function getVehicles() {
 
   //This is getting the model description from the dropdown
   var vehicleModel = document.getElementById('select-model');
-  var strModel = vehicleModel.options[vehicleModel.selectedIndex].text;
-  console.log("Vehicle Model: " + strModel);
+  var strModel = "";
+  if (vehicleModel.options[vehicleModel.selectedIndex].text != 'Select a Model') {
+    strModel = vehicleModel.options[vehicleModel.selectedIndex].text;
+  }
+ 
 
   //This is getting the year from the dropdown
   var vehicleYear = document.getElementById('select-year');
-  var strYear = vehicleYear.options[vehicleYear.selectedIndex].text;
-  console.log("Vehicle Year: " + strYear);
+
+  var strYear = 0;
+  if (vehicleYear.options[vehicleYear.selectedIndex].text != 'Select a Year') {
+    strYear = vehicleYear.options[vehicleYear.selectedIndex].text;
+    
+  }
+ 
 
   var priceSlideLower = document.getElementById('priceRange');
   var strSlideLower = priceSlideLower.childNodes[0].childNodes[1].childNodes[0].childNodes[0].innerHTML;
@@ -24,11 +32,10 @@ function getVehicles() {
   var strSlideUpper = priceSlideUpper.childNodes[0].childNodes[2].childNodes[0].childNodes[0].innerHTML;
   var strUpper = parseInt(strSlideUpper.slice(1));
 
-  console.log("24 Test: Lower: " + strLower);
-  console.log("24 Test: Upper: " + strUpper);  
-
-  requestVehicle.open('GET', 'http://localhost:8080/vehicleSearch' + "?vehicleMake=" + strMake + "&priceLow=" + strLower + "&priceHigh=" + strUpper, true);
  
+
+  requestVehicle.open('GET', 'http://localhost:8080/vehicleSearch' + "?vehicleMake=" + strMake + "&vehicleModel=" + strModel + "&vehicleYear=" + strYear + "&priceLow=" + strLower + "&priceHigh=" + strUpper, true);
+
   requestVehicle.onload = function () {
     // Begin accessing JSON data here
     var data = JSON.parse(this.response);
@@ -36,7 +43,7 @@ function getVehicles() {
     if (requestVehicle.status >= 200 && requestVehicle.status < 400) {
       document.getElementById('vehicleListing').innerHTML = "";
       data.forEach(vehicle => {
-        console.log("27: " + vehicle.make + ": " + vehicle.model);
+       
         makeList(vehicle);
       });
 
@@ -88,38 +95,38 @@ function makeList(vehicle) {
 
   // Set up a loop that goes through the items in listItems one at a time
   var numberOfListItems = vehicleData.length;
-  
-    // create an item for each one
 
-    var listItem = document.createElement('li');
-    var listImage = document.createElement('li');
-    var listDesc = document.createElement('li');
-    var listVIN = document.createElement('li');
-    var listPrice = document.createElement('li');
+  // create an item for each one
 
-    // Add the item text
-    var vhclLstBase64 = vehicle.imageBlobStr;
-    listDesc.innerHTML = vehicle.vehicleDescription;
-    listPrice.innerHTML = "$" + numberWithCommas(vehicle.price);
-    listVIN.innerHTML = "VIN: " + vehicle.vin;
+  var listItem = document.createElement('li');
+  var listImage = document.createElement('li');
+  var listDesc = document.createElement('li');
+  var listVIN = document.createElement('li');
+  var listPrice = document.createElement('li');
 
-    //Add image to the vehicle in the list 
-    var imageTag = new Image();
-    imageTag.className = "img-scale";
-    imageTag.id = "list-img";
-    imageTag.alt = "foto";
-    imageTag.src = vhclLstBase64;
+  // Add the item text
+  var vhclLstBase64 = vehicle.imageBlobStr;
+  listDesc.innerHTML = vehicle.vehicleDescription;
+  listPrice.innerHTML = "$" + numberWithCommas(vehicle.price);
+  listVIN.innerHTML = "VIN: " + vehicle.vin;
 
-    //listImage.innerHTML = imageTag;
-    listImage.appendChild(imageTag);
-    listItem.innerHTML = vehicle.year + " " + vehicle.make + " " + vehicle.model;
+  //Add image to the vehicle in the list 
+  var imageTag = new Image();
+  imageTag.className = "img-scale";
+  imageTag.id = "list-img";
+  imageTag.alt = "foto";
+  imageTag.src = vhclLstBase64;
 
-    // Add listItem to the listElement
-    listElementImage.appendChild(listImage);
-    listElementItem.appendChild(listItem);
-    listElementDesc.appendChild(listDesc);
-    listElementVIN.appendChild(listVIN);
-    listElementPrice.appendChild(listPrice);
+  //listImage.innerHTML = imageTag;
+  listImage.appendChild(imageTag);
+  listItem.innerHTML = vehicle.year + " " + vehicle.make + " " + vehicle.model;
+
+  // Add listItem to the listElement
+  listElementImage.appendChild(listImage);
+  listElementItem.appendChild(listItem);
+  listElementDesc.appendChild(listDesc);
+  listElementVIN.appendChild(listVIN);
+  listElementPrice.appendChild(listPrice);
   //}
 
 }

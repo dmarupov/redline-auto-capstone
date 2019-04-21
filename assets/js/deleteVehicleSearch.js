@@ -18,6 +18,12 @@ function deleteSearch(vehicleVin, vehicleMake, vehicleModel, vehicleYear) {
     // Begin accessing JSON data here
     var data = JSON.parse(this.response)
 
+    console.log("15 data.length: " + data.length);
+    if (data.length < 1) {
+      alert("No results found.");
+
+    }
+
     if (deleteRequest.status >= 200 && deleteRequest.status < 400) {
       data.forEach(vehicle => {
         makeList(vehicle);

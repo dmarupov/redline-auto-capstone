@@ -80,6 +80,10 @@ function validate() {
 
                 if (passTitle.value == passes[i].USERS_PASSWORD && userTitle.value == passes[i].USERS_NAME) {
                     console.log("Success: ");
+                    var sessionTimeout = 1; //hours
+                    var loginDuration = new Date();
+                    loginDuration.setTime(loginDuration.getTime()+(sessionTimeout*60*60*1000));
+                    document.cookie = "Admin=Valid; "+loginDuration.toGMTString()+"; path=/";
                     window.location.href='administrator.html';
                     // userTitle.innerHTML = user.USERS_NAME;
                 }

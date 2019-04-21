@@ -2,6 +2,9 @@
 <html lang="zxx">
 
 <head>
+    <script> if (document.cookie.indexOf("Admin=Valid") == -1) {
+        location.href = "/Login.html";
+      }</script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
   <title>RED LINE AUTO LLC</title>
@@ -32,14 +35,13 @@
     }
 
     #p1 {
-      text-align: center;
+      text-align:center;
+      margin-left: 100px
     }
-
     #p2 {
       text-align: left;
-      margin-left: 80px
-    }
-
+      margin-left: 305px
+    } 
     #addImage {
       text-align: left;
       margin-left: 10px
@@ -71,19 +73,36 @@
       <div id="update-box" style="display:none">
         <h1>Update a vehicle</h1>
         <p id="p1">
+          <div style="margin-left:110px;color:black;">
+          <label for="add-make">Make:</label>
           <input type="text" id="update-make" placeholder="Make" />
+          <label for="add-model">Model:</label>
           <input type="text" id="update-model" placeholder="Model" />
+          <label for="add-year">Year:</label>
           <input type="text" id="update-year" placeholder="Year" />
+          <label for="add-milage">Milage:</label>
           <input type="text" id="update-milage" placeholder="Milage" />
+          <label for="add-price">Price:</label>
           <input type="text" id="update-price" placeholder="Price" />
-          <input type="text" id="update-vin" placeholder="VIN #" disabled />
-          <textarea id="vehicle-detals" rows="10" cols="194">Vehicle Details</textarea>
+          <label for="add-vin">VIN#:</label>
+          <input type="text" id="update-vin" placeholder="VIN #" disabled /><br />
+          </div>
+          <div style="margin-left: 33px;color:black;">
+          <label for="add-vehicle-detals">Vehicle Details:</label>
+          <textarea id="vehicle-detals" rows="10" cols="233">Vehicle Details</textarea>
+          </div>
+          <div style="margin-left:-417px;color:black;">
+          <label for="add-drivetrain">Drivetrain:</label>
+          <input type="text" id="update-drivetrain" placeholder="Drivetrain" />
+          <label for="add-transmission">Transmission:</label>
+          <input type="text" id="update-transmission" placeholder="Transmission" />
+          <label for="add-color">Color:</label>
+          <input type="text" id="update-color" placeholder="Color" />
+          <label for="add-type">Type:</label>
+          <input type="text" id="update-type" placeholder="Type" /><br />
+          </div>
         </p>
         <p id="p2">
-          <input type="text" id="update-drivetrain" placeholder="Drivetrain" />
-          <input type="text" id="update-transmission" placeholder="Transmission" />
-          <input type="text" id="update-color" placeholder="Color" />
-          <input type="text" id="update-type" placeholder="Type" /><br />
           <input type="file" id="update-image-file" style="display:none" /><br />
           <button type="button" id="addImage">Add Image</button>
           <span id="custom-text">No file chosen, yet.</span><br />

@@ -2,6 +2,9 @@
 <html lang="zxx">
 
 <head>
+    <script> if (document.cookie.indexOf("Admin=Valid") == -1) {
+        location.href = "/Login.html";
+      }</script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
   <title>RED LINE AUTO LLC</title>
@@ -21,11 +24,10 @@
       text-align: center
     }
 
-    input,label {
-      display:block;
+    input {
       width: 200px;
       color: black;
-      margin: 10px
+      margin: 10px;
     }
 
     button {
@@ -35,22 +37,18 @@
     }
 
     #addbox {
-      border: 2px solid black
+      border-top: 2px solid black
     }
 
-    /* #p1 {
-      text-align: center;
+    #p1 {
+      text-align:center;
+      margin-left: 100px
     }
-
     #p2 {
       text-align: left;
-      margin-left: 80px
-    } */
-
-    #addImage {
-      text-align: center;
-      margin-left: 10px
-    }
+      margin-left: 305px
+    } 
+   
   </style>
 </head>
 
@@ -58,67 +56,55 @@
   <div>
     <h1>Administrator</h1>
     <FORM>
+      <div class="wrapper">
       <INPUT type="button" value="Add" onclick="window.location.href='add.html'">
       <INPUT type="button" value="Delete" onclick="window.location.href='delete.html'">
       <INPUT type="button" value="Update" onclick="window.location.href='update.html'"><br />
       <INPUT type="button" value="Inventory Report" onclick="window.location.href='inventory-report.html'">
       <INPUT type="button" value="Quarterly Report" onclick="window.location.href='quarterly-report.html'">
       <INPUT type="button" value="Annual Report" onclick="window.location.href='annual-report.html'"><br />
-
+      </div>
       <br /><br />
       <div id="addbox">
         <h1>Add a new vehicle</h1>
         <p id="p1">
-            <div style="float:left;margin-right:20px;margin-left:80px">
-                <label for="add-make">Make</label>
+                <div style="margin-left:110px;color:black;">
+                <label for="add-make">Make:</label>
                 <input type="text" id="add-make" placeholder="Make" required />
-            </div>
-            <div style="float:left;margin-right:20px;">
-                <label for="add-model">Model</label>
+                <label for="add-model">Model:</label>
                 <input type="text" id="add-model" placeholder="Model" required />
-              </div>
-              <div style="float:left;margin-right:20px;">
-                  <label for="add-year">Year</label>
-                  <input type="text" id="add-year" placeholder="Year" required />
+                <label for="add-year">Year:</label>
+                <input type="text" id="add-year" placeholder="Year" required />
+                <label for="add-milage">Milage:</label>
+                <input type="text" id="add-milage" placeholder="Milage" required />
+                <label for="add-price">Price:</label>
+                <input type="text" id="add-price" placeholder="Price" required />
+                <label for="add-vin">VIN#:</label>
+                <input type="text" name="add-vin" id="add-vin" placeholder="VIN #" required /><br />
                 </div>
-                <div style="float:left;margin-right:20px;">
-                    <label for="add-milage">Milage</label>
-                    <input type="text" id="add-milage" placeholder="Milage" required />
-                  </div>
-                  <div style="float:left;margin-right:20px;">
-                      <label for="add-price">Price</label>
-                      <input type="text" id="add-price" placeholder="Price" required />
-                    </div>
-                    <div style="float:left">
-                        <label for="add-vin">VIN#</label>
-                        <input type="text" name="add-vin" id="add-vin" placeholder="VIN #" required />
-                      </div>
-                      <div style="float:left">
-                          <label for="add-vehicle-detals">Vehicle Details</label>
-                          <textarea id="add-vehicle-detals" rows="10" cols="194" minlength=250 required></textarea><br />
-                        </div>
-                   <div style="float:left;margin-right:20px;margin-top:300px">
-                <label for="add-drivetrain">Drivetrain</label>
+                <div style="margin-left: 33px;color:black;">
+                <label for="add-vehicle-detals">Vehicle Details:</label>
+                <textarea id="add-vehicle-detals" rows="10" cols="233" minlength=250 required></textarea><br />
+                </div>
+                <div style="margin-left:-417px;color:black;">
+                <label for="add-drivetrain">Drivetrain:</label>
                 <input type="text" id="add-drivetrain" placeholder="Drivetrain" required />
-              </div>
-              <div style="float:left;margin-right:20px;">
-                  <label for="add-transmission">Transmission</label>
-                  <input type="text" id="add-transmission" placeholder="Transmission" required />
+                <label for="add-transmission">Transmission:</label>
+                <input type="text" id="add-transmission" placeholder="Transmission" required />
+                <label for="add-color">Color:</label>
+                <input type="text" id="add-color" placeholder="Color" required />
+                <label for="add-type">Type:</label>
+                <input type="text" id="add-type" placeholder="Type" required /><br />
                 </div>
-                <div style="float:left;margin-right:20px;">
-                    <label for="add-color">Color</label>
-                    <input type="text" id="add-color" placeholder="Color" required />
-                  </div>
-                  <div style="float:left">
-                      <label for="add-type">Type</label>
-                      <input type="text" id="add-type" placeholder="Type" required /><br />
-                    </div>
+        </p>
+        <p id="p2">
           <input type="file" id="image-file" style="display:none" /><br />
           <button type="button" id="addImage">Add Image</button>
           <span id="custom-text">No file chosen, yet.</span><br />
           <button style="display: none;" type="submit" id="submit-add-button">Not Shown</button>
           <button type="button" value="Add Vehicle" onclick="saveVehicle()">Add Vehicle</button>
           <input type="button" id=Reset value="Reset" />
+        </p>
       </div>
     </FORM>
   </div>
